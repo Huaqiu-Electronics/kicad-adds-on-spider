@@ -1,0 +1,3419 @@
+{
+    "packages": [
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "description": "Based on Solarized colorscheme from Ethan Schoonover",
+            "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
+            "identifier": "com.github.pointhi.kicad-color-schemes.solarized-light",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "Solarized Light Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "0be21e4d43066a1870a88eba7b627a4dac1c2fec20506dd50c78755200b412a3",
+                    "download_size": 4390,
+                    "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.solarized-light_v1.2_pcm.zip",
+                    "install_size": 5679,
+                    "kicad_version": "5.99",
+                    "status": "stable",
+                    "version": "1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "description": "Designed for printing",
+            "description_full": "Designed for printing",
+            "identifier": "com.github.pointhi.kicad-color-schemes.black-white",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "Black-White Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "a6efe8dcbaf9d5e579dd9f565ed8c02ad30a896761b2c2fcc1911c7df8bce754",
+                    "download_size": 3972,
+                    "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.black-white_v1.2_pcm.zip",
+                    "install_size": 5161,
+                    "kicad_version": "5.99",
+                    "status": "stable",
+                    "version": "1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "description": "Based on Solarized colorscheme from Ethan Schoonover",
+            "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
+            "identifier": "com.github.pointhi.kicad-color-schemes.solarized-dark",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "Solarized Dark Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "7870a3560e9ba112b3bad342d457730bc9c65e787af87d0c55f6fad544a0532c",
+                    "download_size": 4395,
+                    "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.solarized-dark_v1.2_pcm.zip",
+                    "install_size": 5691,
+                    "kicad_version": "5.99",
+                    "status": "stable",
+                    "version": "1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "mail@qu1ck.org"
+                },
+                "name": "qu1ck"
+            },
+            "description": "Generate interactive html BOM to assist with manual pcb assembly",
+            "description_full": "This plugin generates a convenient Bill of Materials (BOM) listing with the ability to visually correlate and easily search for components and their placements on the PCB. It is particularly useful when hand-soldering a prototype, as it allows users to quickly find locations of components groups on the board. It is also possible to reverse lookup the component group by clicking on a footprint on the board drawing.\nThe plugin utilizes Pcbnew python API to read PCB data and render silkscreen, fab layer, footprint pads, text, and drawings. BOM table fields and grouping is fully configurable, additional columns, such as a manufacturer ID, can be added in Schematic editor and imported either through the netlist file, XML file generated by Eeschema's internal BOM tool, or from board file itself.\nThere is an option to include tracks/zones data as well as netlist information allowing dynamic highlight of nets on the board.",
+            "identifier": "org.openscopeproject.InteractiveHtmlBom",
+            "keep_on_update": [
+                ".*/config\\.ini",
+                ".*/web/user.*"
+            ],
+            "license": "MIT",
+            "name": "Interactive Html Bom",
+            "resources": {
+                "Demos": "https://openscopeproject.org/InteractiveHtmlBomDemo/",
+                "Forum": "https://forum.kicad.info/t/interactive-html-bom-plugin-for-kicad-5-0/11713",
+                "Github": "https://github.com/openscopeproject/InteractiveHtmlBom",
+                "Wiki": "https://github.com/openscopeproject/InteractiveHtmlBom/wiki"
+            },
+            "tags": [
+                "bom",
+                "pcbnew",
+                "html",
+                "assembly",
+                "documentation"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "f9ae167076321d01d77e91c05aeba8e50522dd22433fb042ef3bb2f0bb726f11",
+                    "download_size": 149857,
+                    "download_url": "https://github.com/openscopeproject/InteractiveHtmlBom/releases/download/v2.9.0/InteractiveHtmlBom_v2.9.0_pcm.zip",
+                    "install_size": 728477,
+                    "kicad_version": "6.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "2.9.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/DX-MON"
+                },
+                "name": "Rachel Mant"
+            },
+            "description": "Eagle CAD inspired color theme",
+            "description_full": "Eagle CAD inspired color theme",
+            "identifier": "com.github.pointhi.kicad-color-schemes.eagle-dark",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "Eagle Dark Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": []
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/wykys"
+                },
+                "name": "Jan Vykydal"
+            },
+            "description": "Designed by wykys, Inspired by Altium",
+            "description_full": "Designed by wykys, Inspired by Altium",
+            "identifier": "com.github.pointhi.kicad-color-schemes.wlight",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "wLight Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "73b9810725f93c85982d554fc3c500715bdd4bcce5559d735f229c5a8174cc7b",
+                    "download_size": 4322,
+                    "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.wlight_v1.1_pcm.zip",
+                    "install_size": 5486,
+                    "kicad_version": "5.99",
+                    "status": "stable",
+                    "version": "1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/jordiorlando"
+                },
+                "name": "Jordi Pakey-Rodriguez"
+            },
+            "description": "Designed by @0xdec",
+            "description_full": "Designed by @0xdec.",
+            "identifier": "com.github.pointhi.kicad-color-schemes.nord",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "Nord Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "3d8d949e366e33c73d53e199d62aeafecd58c497e2a15d4b972fda8a18a03a11",
+                    "download_size": 6733,
+                    "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.nord_v1.1_pcm.zip",
+                    "install_size": 10342,
+                    "kicad_version": "5.99",
+                    "status": "stable",
+                    "version": "1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "perigoso@riseup.net"
+                },
+                "name": "Rafael Silva (perigoso)"
+            },
+            "description": "Keyboard switch footprint library",
+            "description_full": "This package contains footprints for popular keyboard switches, these are generated automatically.\nSupported footprints:\n\n- Cherry MX or equivalent, Plate and PCB mount.\n- Alps/Matias or equivalent.\n- Hybrid footprints for Cherry MX and Alps/Matias (accepts both).\n- Kailh Choc low profile switches (version 1).\n- Kailh Hotswap sockets for Cherry MX equivalent switches.\n",
+            "identifier": "com.github.perigoso.keyswitch-kicad-library",
+            "license": "CC-BY-SA-4.0",
+            "name": "Keyswitch Kicad Library",
+            "resources": {
+                "Github": "https://github.com/perigoso/keyswitch-kicad-library"
+            },
+            "tags": [
+                "footprint",
+                "library",
+                "keyswitch",
+                "keyboard"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "b38d56323acb91ad660567340ca938c5b4a83a27eea52308ef14aa7857b0071b",
+                    "download_size": 7808392,
+                    "download_url": "https://github.com/kiswitch/keyswitch-kicad-library/releases/download/v2.4/keyswitch-kicad-library.zip",
+                    "install_size": 37552156,
+                    "kicad_version": "5.1",
+                    "status": "stable",
+                    "version": "2.4"
+                },
+                {
+                    "download_sha256": "869fe4ce7e988f6cbbf8c0411d94c1a5c32244bdef6eca589048e7cc31e341a5",
+                    "download_size": 7922892,
+                    "download_url": "https://github.com/kiswitch/keyswitch-kicad-library/releases/download/v2.3/keyswitch-kicad-library.zip",
+                    "install_size": 38217581,
+                    "kicad_version": "5.1",
+                    "status": "stable",
+                    "version": "2.3"
+                },
+                {
+                    "download_sha256": "e3cfede28eb7cf1d590d149bfc292fa8d772bc3b33bc52b83a87bcae1ba3f7e8",
+                    "download_size": 7539262,
+                    "download_url": "https://github.com/kiswitch/keyswitch-kicad-library/releases/download/v2.2/keyswitch-kicad-library.zip",
+                    "install_size": 36095418,
+                    "kicad_version": "5.1",
+                    "status": "stable",
+                    "version": "2.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "dawid_cislo@o2.pl"
+                },
+                "name": "Dawid Cis\u0142o"
+            },
+            "description": "Symbol and Footprint library focused on improving schematic and PCB readability and aesthetics, mainly intended for hobbyist use",
+            "description_full": "Current version: 3.0\n\nYou need to manually update the library tables in the Library Manager. Refer to the links below for documentation and installation instructions.\n\nAlternate KiCad Library contains over 30000 symbols and 9200 footprints.\n New symbols include opamps, voltage comparators, instrumentation amplifiers, difference amplifiers, differential amplifiers and more.\nNew footprints include Potentiometers, SIP packages and new variants for existing libraries.\n\n",
+            "identifier": "com.github.dawidcislo.alternate-kicad-library",
+            "license": "CC-BY-SA",
+            "name": "Alternate Kicad Library",
+            "resources": {
+                "Github": "https://github.com/DawidCislo/Alternate-KiCad-Library",
+                "Website": "https://www.alternatekicadlibrary.com/"
+            },
+            "tags": [
+                "footprints",
+                "symbols"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "55da0f126d556400a0511b75fc1543f91e5a4de1645cafbf057c307cb51a9e46",
+                    "download_size": 24209427,
+                    "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/releases/download/v3.0/com_github_alternate_kicad_library.zip",
+                    "install_size": 107680556,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "3.0"
+                },
+                {
+                    "download_sha256": "dc07a18ece7a8df203229999b13efe2f0f8e15abf1b07ea507deefe760d5de8b",
+                    "download_size": 15031216,
+                    "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/releases/download/v2.1/com_github_alternate_kicad_library.zip",
+                    "install_size": 67073607,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "2.1"
+                },
+                {
+                    "download_sha256": "9263e7d394912f06baa1d33180e59bf10a75086ad683abf31d65581c8f2f16e2",
+                    "download_size": 10872186,
+                    "download_url": "https://github.com/DawidCislo/Alternate-KiCad-Library/raw/main/PCM_Releases/2.0/com_github_alternate_kicad_library.zip",
+                    "install_size": 59137804,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "2.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "4ms@4mscompany.com",
+                    "web": "https://4mscompany.com"
+                },
+                "name": "4ms Company"
+            },
+            "description": "Kicad symbol and footprint libraries, with a focus on components used in analog and DSP audio.",
+            "description_full": "Kicad symbol and footprint libraries for analog and digital (DSP) audio electronics.\n\nYou must add these libraries to your library tables, see GitHub link for instructions.\n\nThese libraries are used at 4ms Company in our audio devices. Most symbols include manufacturer name and part number, and sometimes multiple alternative numbers. Some parts have JLCPCB part numbers as well, which is used by our BOM and XYPOS scripts in order to streamline using their services (see our GitHub page for links to those scripts).\n\nEach symbol represents a unique part. For example, there is a separate symbol for each combination of resistor value, tolerance, and size. While this makes for a lot of symbols, Kicad's filter toolbar in the symbol chooser makes finding a part easy, and there is less chance for BOM errors.\n\nWhen possible, symbols look like the official KiCad symbols, so that it's easy to use official and 4ms symbols in the same schematic.",
+            "identifier": "com.github.4ms.4ms-kicad-lib",
+            "license": "Unlicense",
+            "maintainer": {
+                "contact": {
+                    "email": "4ms@4mscompany.com",
+                    "web": "https://4mscompany.com"
+                },
+                "name": "4ms Company"
+            },
+            "name": "4ms Kicad Libraries",
+            "resources": {
+                "homepage": "https://github.com/4ms/4ms-kicad-lib"
+            },
+            "tags": [
+                "footprints",
+                "symbols"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "09da3a06b3912daadc0530abc5722a9660b547ef24db3a802ddc2e262e4c2ef3",
+                    "download_size": 356300,
+                    "download_url": "https://github.com/4ms/4ms-kicad-lib/releases/download/1.0.1/4ms-kicad-lib-PCM-1.0.1.zip",
+                    "install_size": 2060685,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "easyw@katamail.com"
+                },
+                "name": "easyw"
+            },
+            "description": "A suite of kicad pcbnew action plugin tools",
+            "description_full": "Annular Ring Checker, Snap Selected Footprint(s) to Grid, Fabrication Footprint Position, Move Selected Drawings to chosen Layer, Export pcb technical layers to DXF, Checking 3D missing models",
+            "identifier": "com.github.easyw.kicad-action-tools",
+            "license": "GPL-2.0",
+            "name": "pcb-action-tools",
+            "resources": {
+                "Github": "https://github.com/easyw/kicad-action-tools",
+                "Readme": "https://github.com/easyw/kicad-action-tools/blob/master/README.md"
+            },
+            "tags": [
+                "annular",
+                "pcbnew",
+                "dxf",
+                "grid",
+                "mcad"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "3acda65eda6dab6f21f8a30cd7ff3a628b4393d6f01a2a5df6bb126a81e3e468",
+                    "download_size": 1035370,
+                    "download_url": "https://github.com/easyw/kicad-action-tools/releases/download/v1.0.4/pcb-action-tools_v1.0.4_pcm.zip",
+                    "install_size": 1236317,
+                    "kicad_version": "5.1",
+                    "kicad_version_max": "6.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.0.4"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "support": "https://forum.kicad.info/"
+                },
+                "name": "Albin Dennevi"
+            },
+            "description": "Export a customized pdf of the board",
+            "description_full": "Each enabled template will result in a page in the pdf file that's created by this plugin. You can enable any number of templates to get different views and color modes of the pcb. Each template can be individually configured to give the desired output. It's completely up to you which layers to show, and which colors the layers shall have.",
+            "identifier": "com.gitlab.dennevi.Board2Pdf",
+            "license": "GPL-3.0",
+            "name": "Board2Pdf",
+            "resources": {
+                "Gitlab": "https://gitlab.com/dennevi/Board2Pdf",
+                "Readme": "https://gitlab.com/dennevi/Board2Pdf/-/blob/main/README.md",
+                "Wiki": "http://board2pdf.dennevi.com"
+            },
+            "tags": [
+                "pcbnew",
+                "assembly",
+                "documentation"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "3cf9966dddb3d45aee338383a03bece34a5d387063e43608c038debb1f3751c0",
+                    "download_size": 354169,
+                    "download_url": "https://gitlab.com/dennevi/kicad-plugins-releases/-/raw/main/Board2Pdf/releases/Board2Pdf_v1.3.zip",
+                    "install_size": 1872902,
+                    "kicad_version": "6.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.3"
+                },
+                {
+                    "download_sha256": "a15ff0537ce436cbc2eab0c8fd3eb4f2a50d857fcbaac6372c712842e009c96f",
+                    "download_size": 129477,
+                    "download_url": "https://gitlab.com/dennevi/kicad-plugins-releases/-/raw/main/Board2Pdf/releases/Board2Pdf_v1.2.zip",
+                    "install_size": 769144,
+                    "kicad_version": "6.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.2"
+                },
+                {
+                    "download_sha256": "7f774bcad2b56d9df72fb625cefb7153c700ad65fc3f5370224251083f560606",
+                    "download_size": 61342,
+                    "download_url": "https://gitlab.com/dennevi/kicad-plugins-releases/-/raw/main/Board2Pdf/releases/Board2Pdf_v1.1.zip",
+                    "install_size": 445706,
+                    "kicad_version": "6.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.1"
+                },
+                {
+                    "download_sha256": "1aa55bc50f7cfbb16fa5ee8fb86a6c47dbe526b1d487d7066153e21bb2838c3b",
+                    "download_size": 108872,
+                    "download_url": "https://gitlab.com/dennevi/kicad-plugins-releases/-/raw/main/Board2Pdf/releases/Board2Pdf_v0.7.zip",
+                    "install_size": 646866,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "testing",
+                    "version": "0.7"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/wykys"
+                },
+                "name": "Jan Vykydal"
+            },
+            "description": "Designed by wykys, Inspired by One Dark",
+            "description_full": "Designed by wykys, Inspired by One Dark",
+            "identifier": "com.github.pointhi.kicad-color-schemes.wdark",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                },
+                "name": "Thomas Pointhuber"
+            },
+            "name": "wDark Theme",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "9e58f7e6032dd40221dc80817dc992f233eba1858d590104c3445d41abcc136a",
+                    "download_size": 4289,
+                    "download_url": "https://github.com/pointhi/kicad-color-schemes/releases/download/2021-12-05/com.github.pointhi.kicad-color-schemes.wdark_v1.0_pcm.zip",
+                    "install_size": 5490,
+                    "kicad_version": "5.99",
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {},
+                "name": "franzee"
+            },
+            "description": "Generic international symbols, intended as building blocks and for SPICE simulation.",
+            "description_full": "Generic symbols mostly compatible with IEC/IEEE/ANSI/GOST/DIN/EN/GB standards, intended for SPICE simulation and as building blocks for fully specified symbols. Includes ANSI/IEEE Std 315 zigzag/curved/looped resistor/capacitor/inductor symbols and distinctive shape logic symbols that match the corresponding IEC (uniform shape) symbols.\nRecommended Schematic Setup: default line width and wire thickness 0.254\u202fmm (10\u202fmil), text size and grid 2.54\u202fmm (100\u202fmil), automatically place symbol fields unchecked.\nLibrary Path:\n${KICAD6_3RD_PARTY}/symbols/com_gitlab_franzee_kicad-addons_generic/Generic.kicad_sym\n${KICAD6_3RD_PARTY}/symbols/com_gitlab_franzee_kicad-addons_generic/Generic-50.kicad_sym",
+            "identifier": "com.gitlab.franzee.kicad-addons.generic",
+            "license": "CC0-1.0",
+            "name": "Generic Symbol Library",
+            "resources": {
+                "Repository": "https://gitlab.com/franzee/kicad-addons/"
+            },
+            "tags": [
+                "symbols",
+                "generic",
+                "international",
+                "simulation",
+                "spice",
+                "iec",
+                "ieee",
+                "ansi",
+                "en"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "bd27deb63661a0feb533ae5aa84f3303ca609f50214d0d6ba39cd93dae922587",
+                    "download_size": 14796,
+                    "download_url": "https://gitlab.com/franzee/kicad-addons/-/raw/main/kicad-generic-symbols-0.6.0.zip",
+                    "install_size": 310177,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "0.6.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {},
+                "name": "franzee"
+            },
+            "description": "Generic Elektuur style symbols, primarily intended for circuit diagrams used for documentation and SPICE simulation.",
+            "description_full": "Elektuur style symbols as introduced in the later 1970s (until the early 1990s when they became more angular).\nThe symbol sizes have been increased by 1.6\u202f% (2\u202fmm grid to 80\u202fmil grid) and the pins realigned to a 2.54\u202fmm (100\u202fmil) grid.\nRecommended Schematic Setup: default line width and wire thickness 0.254\u202fmm (10\u202fmil), junction dot size Small (40\u202fmil), text size 1.27\u202fmm (50\u202fmil), grid 2.54\u202fmm (100\u202fmil), automatically place symbol fields unchecked.\nLibrary Paths:\n${KICAD6_3RD_PARTY}/symbols/com_gitlab_franzee_kicad-addons_elektuur/Elektuur.kicad_sym\n${KICAD6_3RD_PARTY}/footprints/com_gitlab_franzee_kicad-addons_elektuur/Elektuur.pretty",
+            "identifier": "com.gitlab.franzee.kicad-addons.elektuur",
+            "license": "CC0-1.0",
+            "name": "Elektuur Style Symbol Library",
+            "resources": {
+                "Repository": "https://gitlab.com/franzee/kicad-addons/"
+            },
+            "tags": [
+                "elektuur",
+                "elektor",
+                "symbols",
+                "generic",
+                "documentation",
+                "simulation",
+                "spice",
+                "ngspice",
+                "footprints"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "7d2632936cca4bf640b25889031d74dea4538e95ee5a7abbc15a3b8715297513",
+                    "download_size": 83746,
+                    "download_url": "https://gitlab.com/franzee/kicad-addons/-/raw/main/kicad-elektuur-symbols-0.6.4.zip",
+                    "install_size": 376628,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "0.6.4"
+                },
+                {
+                    "download_sha256": "7eb3c5709f700f81dc34847c21efe4e71aa6ee99b8be0cec6ec7eaefd6c53b72",
+                    "download_size": 77609,
+                    "download_url": "https://gitlab.com/franzee/kicad-addons/-/raw/main/kicad-elektuur-symbols-0.6.3.zip",
+                    "install_size": 367469,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "0.6.3"
+                },
+                {
+                    "download_sha256": "79f85c6dd2480f50fe614af088ecbd8e0215cf8a259b1275ad359b00a178a2f6",
+                    "download_size": 17465,
+                    "download_url": "https://gitlab.com/franzee/kicad-addons/-/raw/main/kicad-elektuur-symbols-0.6.2.zip",
+                    "install_size": 264733,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "0.6.2"
+                },
+                {
+                    "download_sha256": "48522006cfa20920d6ddedd96ef73ea2453ab3e94059a16437ce11628d66e2df",
+                    "download_size": 15962,
+                    "download_url": "https://gitlab.com/franzee/kicad-addons/-/raw/main/kicad-elektuur-symbols-0.6.0.zip",
+                    "install_size": 232723,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "0.6.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "perigoso@riseup.net"
+                },
+                "name": "Rafael Silva (perigoso)"
+            },
+            "description": "Kicad symbol and footprint library for input device related components.",
+            "description_full": "This package contains footprints and symbols for input device related components like optical tracking sensors and switches.",
+            "identifier": "com.github.openinput-fw.openinput-kicad-library",
+            "license": "CC-BY-4.0",
+            "name": "openinput library",
+            "resources": {
+                "donate": "https://opencollective.com/openinput",
+                "github": "https://github.com/openinput-fw/openinput-kicad-library"
+            },
+            "tags": [
+                "footprint",
+                "library",
+                "mouse",
+                "gaming",
+                "optical",
+                "tracking",
+                "sensor",
+                "input-device"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "8d7329d5607345108043455bc87e9f7f56a742e08b47ef070ded0a06aae64d75",
+                    "download_size": 1697322,
+                    "download_url": "https://github.com/openinput-fw/openinput-kicad-library/releases/download/v0.3/openinput-kicad-library.zip",
+                    "install_size": 7028930,
+                    "kicad_version": "6.0",
+                    "status": "testing",
+                    "version": "0.3"
+                },
+                {
+                    "download_sha256": "89b2355a96bb0cf2384861db083c9e9d51f0072c96e9ab4dba82c1e2eb2b6b73",
+                    "download_size": 1697328,
+                    "download_url": "https://github.com/openinput-fw/openinput-kicad-library/releases/download/v0.2/openinput-kicad-library.zip",
+                    "install_size": 7028937,
+                    "kicad_version": "6.0",
+                    "status": "testing",
+                    "version": "0.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://alexanderbrevig.com"
+                },
+                "name": "Alexander Brevig"
+            },
+            "description": "A KiCAD adoptation of the Gruvbox theme",
+            "description_full": "Gruvbox is a popular theme. Gruvbox all the things!",
+            "identifier": "com.github.alexanderbrevig.kicad-gruvbox-theme",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://alexanderbrevig.com"
+                },
+                "name": "Alexander Brevig"
+            },
+            "name": "Gruvbox",
+            "resources": {
+                "homepage": "https://github.com/alexanderbrevig/kicad-gruvbox-theme"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "637ea8efe153cc64380c7e8bf78b92d65f80c901c234dc4d0229cf8dc55b94df",
+                    "download_size": 12915,
+                    "download_url": "https://github.com/AlexanderBrevig/kicad-gruvbox-theme/releases/download/v1.1/Gruvbox_v1.1.zip",
+                    "install_size": 21285,
+                    "kicad_version": "6",
+                    "status": "stable",
+                    "version": "1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/yaqwsx",
+                    "twitter": "https://twitter.com/yaqwsx_cz",
+                    "web": "https://honzamrazek.cz"
+                },
+                "name": "Jan Mr\u00e1zek"
+            },
+            "description": "Automation for KiCAD",
+            "description_full": "KiKit is a Python library, KiCAD plugin and a CLI tool to automate several tasks in a standard KiCAD workflow like:\n\u2022 panelization of both, regular and oddly shaped, boards\n\u2022 automated exporting manufacturing data based on manufacturer presets\n\u2022 multi-board project in KiCAD\n\u2022 building board presentation pages\n\u2022 making 3D-printed solder stencils\n\u2022 and more",
+            "identifier": "com.github.yaqwsx.kikit",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/yaqwsx",
+                    "twitter": "https://twitter.com/yaqwsx_cz",
+                    "web": "https://honzamrazek.cz"
+                },
+                "name": "Jan Mr\u00e1zek"
+            },
+            "name": "KiKit",
+            "resources": {
+                "homepage": "https://github.com/yaqwsx/KiKit"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "5d2a77022916cfb8be33a69b736bb52e002fb5bce830558952564e8a0305c658",
+                    "download_size": 9533,
+                    "download_url": "https://github.com/yaqwsx/KiKit/releases/download/v1.5.0/pcm-kikit.zip",
+                    "install_size": 10579,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.5.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/yaqwsx",
+                    "twitter": "https://twitter.com/yaqwsx_cz",
+                    "web": "https://honzamrazek.cz"
+                },
+                "name": "Jan Mr\u00e1zek"
+            },
+            "description": "A footprint and schematic library for KiKit annotations.",
+            "description_full": "KiKit uses these symbols a footprints to annotate your boards (e.g., to place a tab in a panel).",
+            "identifier": "com.github.yaqwsx.kikit-library",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/yaqwsx",
+                    "twitter": "https://twitter.com/yaqwsx_cz",
+                    "web": "https://honzamrazek.cz"
+                },
+                "name": "Jan Mr\u00e1zek"
+            },
+            "name": "KiKit Library",
+            "resources": {
+                "homepage": "https://github.com/yaqwsx/KiKit"
+            },
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "18a04eba556a29361652017a454506d4d731a52307201ff4f695ad2e881c37e0",
+                    "download_size": 11218,
+                    "download_url": "https://github.com/yaqwsx/KiKit/releases/download/v1.5.0/pcm-kikit-lib.zip",
+                    "install_size": 14935,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.5.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/gregdavill",
+                    "twitter": "https://twitter.com/gregdavill",
+                    "web": "https://gregdavill.com"
+                },
+                "name": "Greg Davill"
+            },
+            "description": "Custom font label generator",
+            "description_full": "A label generator that renders svgs from truetype fonts, and creates silkscreen footprints for your PCB. Based of a similar plugin for Cadsoft Eagle called Buzzard",
+            "identifier": "com.github.gregdavill.KiBuzzard",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/gregdavill",
+                    "twitter": "https://twitter.com/gregdavill",
+                    "web": "https://gregdavill.com"
+                },
+                "name": "Greg Davill"
+            },
+            "name": "KiBuzzard",
+            "resources": {
+                "homepage": "https://github.com/gregdavill/KiBuzzard"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "d786fea64ba6576a58524888ad139d713f138514fb75a80b74d3f44c88649404",
+                    "download_size": 7673952,
+                    "download_url": "https://github.com/gregdavill/KiBuzzard/releases/download/1.5.0/KiBuzzard-1.5.0-pcm.zip",
+                    "install_size": 24007595,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.5.0"
+                },
+                {
+                    "download_sha256": "a077d5bd4622aa6fa96ed9c28acd74635a8865c65b220de42ca844b0994ca5b5",
+                    "download_size": 7774425,
+                    "download_url": "https://github.com/gregdavill/KiBuzzard/releases/download/1.3.0/KiBuzzard-1.3.0-pcm.zip",
+                    "install_size": 25632774,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.3.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/MitjaNemec"
+                },
+                "name": "Mitja Nemec"
+            },
+            "description": "copies 3D models to the project local subfolder",
+            "description_full": "Copies footprint models to the project local subfolder and remaps all the links within the used footprints.\n !!! Warning! If you update the footprint the link between the footprint and 3D model will be reset. You'll need to re-run the plugin in order to remap the links. You can make the layout file completely independent if you also export the footprints to project local librarary via menu File/Export/Footprints to new library and update the footprint to refer to new library.",
+            "identifier": "com.github.MitjaNemec.Archive3DModels",
+            "license": "GPL-2.0",
+            "name": "Archive 3D Models",
+            "resources": {
+                "homepage": "https://github.com/MitjaNemec/Archive3DModels"
+            },
+            "tags": [
+                "pcbnew",
+                "models"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "28f1ca7c668482ce669a5e4c3b119596ec532c73c45fc7b4910c20727806a29c",
+                    "download_size": 16365,
+                    "download_url": "https://github.com/MitjaNemec/Archive3DModels/releases/download/1.0.11/Archive3DModels-1.0.11-pcm.zip",
+                    "install_size": 35676,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "8.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.0.11"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/aislerhq",
+                    "twitter": "https://twitter.com/aislerhq",
+                    "web": "https://aisler.net"
+                },
+                "name": "AISLER B.V."
+            },
+            "description": "Push your layout to AISLER with just one click for instant Powerful Prototyping",
+            "description_full": "Want to use Powerful Prototyping or Amazing Assembly from AISLER? This plugin will provide you with a convenient one-click push to our service.\nWhen you click the AISLER Push-Button we will export your project's\n\u2022 Gerber Files in the right format, so that production will run ultra-smooth\n\u2022 IPC-Netlist-File to enable Smart Tests for production so that you get feedback down to the tiniest trace on how to improve your design for production\n\u2022 BOM-file to import all components you have already assigned in your project\n\u2022 P'n'P-file to get your project ready for assembly\nOnce the upload (which will only take a couple of seconds) is complete you can place your order within less than one minute. If you iterate on your design and click the push button again, we will make sure your project is only stored as a new revision on our server.\nAbout AISLER:\nAISLER makes hardware less hard by providing simple electronics manufacturing for everyone. We are based in Europe and focus on amazingly affordable prices, super swift delivery and outstanding customer support. We are KiCad Platinum Sponsor as we donate a significant amount of our revenues made from KiCad designs back to the project.",
+            "identifier": "com.github.aislerhq.PushForKiCad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/aislerhq",
+                    "twitter": "https://twitter.com/aislerhq",
+                    "web": "https://aisler.net"
+                },
+                "name": "AISLER B.V."
+            },
+            "name": "AISLER Push for KiCad",
+            "resources": {
+                "homepage": "https://github.com/aislerhq/PushForKiCad"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "f1f880f514dd845a12f720d46a9302ff38957bdf0a40343d063340f9b1143f38",
+                    "download_size": 12397,
+                    "download_url": "https://github.com/aislerhq/PushForKiCad/releases/download/0.2.1/PushForKiCad-0.2.1-pcm.zip",
+                    "install_size": 18837,
+                    "kicad_version": "8.00",
+                    "status": "stable",
+                    "version": "0.2.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/MitjaNemec"
+                },
+                "name": "Mitja Nemec"
+            },
+            "description": "Arrange footprints on a line, circle or grid.",
+            "description_full": "Arrange sequentially numbered footprints or footprints from multiple hierarchical sheets in linear, circular or matrix arrangement. This plugin works on footprints already present in the layout, so that layout and schematics stay in sync.\nThe placement of footprints from multiple hierarchical sheets works well together with ReplicateLayout plugin",
+            "identifier": "com.github.MitjaNemec.PlaceFootprints",
+            "license": "GPL-2.0",
+            "name": "Place Footprints",
+            "resources": {
+                "homepage": "https://github.com/MitjaNemec/PlaceFootprints"
+            },
+            "tags": [
+                "pcbnew",
+                "footprints",
+                "arrange"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "3a9a1a22369b68c83a585f096de74f5b42176fa91cbb6b7756b060d10d6ec60e",
+                    "download_size": 23871,
+                    "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/3.0.0/PlaceFootprints-3.0.0-pcm.zip",
+                    "install_size": 93545,
+                    "kicad_version": "7.99",
+                    "kicad_version_max": "8.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "3.0.0"
+                },
+                {
+                    "download_sha256": "b7c63488bf8f670b3d0a1da32f7a88443ede6c83be6111a1f0d4392e2f2f32f2",
+                    "download_size": 23999,
+                    "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/2.1.3/PlaceFootprints-2.1.3-pcm.zip",
+                    "install_size": 93076,
+                    "kicad_version": "7.0",
+                    "kicad_version_max": "7.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "2.1.3"
+                },
+                {
+                    "download_sha256": "a6a838d34fbe07fba0909c22d0bfeed27c5430250dc837f1348c0578237031a8",
+                    "download_size": 22668,
+                    "download_url": "https://github.com/MitjaNemec/PlaceFootprints/releases/download/1.2.12/PlaceFootprints-1.2.12-pcm.zip",
+                    "install_size": 78947,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.2.12"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/MitjaNemec"
+                },
+                "name": "Mitja Nemec"
+            },
+            "description": "Replicates layout of one hierarchical sheet to other copies of the same sheet.",
+            "description_full": "Replicate layout of one hierarchical sheet to other hierarchical sheets. The replication is based upon hierarchical sheets in eeschema. The basic requirement for replication is that the section to be replicated (source) is completely contained within a single hierarchical sheet, and replicated sections (destination) are just copies of the same sheet. Complex hierarchies are supported therefore replicated sheet can contain subsheets. The plugin replicates footprints, zones, tracks, text and drawings.\nAfter the section for replication (source section) has been laid out (footprints, tracks, text objects and zones placed) you need to:\n1. Place the anchor footprints for the destiantion sections you want to replicate. This defines the position and orientation of replicated sections. You can use PlaceFootprints action plugin for this.\n2. Select the same anchor footprint within the source section.\n3. Run the plugin.\n4. Choose which hierarchical level you wish to replicate.\n5. Select which sheets you want to replicate (default is all of them)\n6. Select whether you want to replicate also tracks, zones and/or text objects.\n7. Select whether you want to replicate tracks/zones/text which intersect the pivot bounding box or just those contained within the bounding box.\n8. Select whether you want to delete already laid out tracks/zones/text (this is useful when updating an already replicated layout).\n9. Hit OK.\nBy default, only objects which are fully contained in the bounding box constituted by all the footprints in the section will be replicated. You can select to also replicate zones and tracks which intersect this bounding box. Additionally, tracks, text and zones which are already laid out in the replicated bounding boxes can be removed (useful when updating). Note that bounding boxes are squares aligned with the x and y axis, regardless of section orientation.",
+            "identifier": "com.github.MitjaNemec.ReplicateLayout",
+            "license": "GPL-2.0",
+            "name": "Replicate Layout",
+            "resources": {
+                "homepage": "https://github.com/MitjaNemec/ReplicateLayout"
+            },
+            "tags": [
+                "pcbnew",
+                "footprints",
+                "arrange"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "35a13bdc22c29562201c62175983165a6f39b6f1dd954a9cd24e44bf3f543582",
+                    "download_size": 34298,
+                    "download_url": "https://github.com/MitjaNemec/ReplicateLayout/releases/download/3.0.2/ReplicateLayout-3.0.2-pcm.zip",
+                    "install_size": 131163,
+                    "kicad_version": "7.99",
+                    "kicad_version_max": "8.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "3.0.2"
+                },
+                {
+                    "download_sha256": "0885180a83d251ab76a7f952248e69af7415ee67e319bcda0497e73ffda41021",
+                    "download_size": 34105,
+                    "download_url": "https://github.com/MitjaNemec/ReplicateLayout/releases/download/2.1.3/ReplicateLayout-2.1.3-pcm.zip",
+                    "install_size": 129993,
+                    "kicad_version": "6.99",
+                    "kicad_version_max": "7.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "2.1.3"
+                },
+                {
+                    "download_sha256": "6480cba669e1c56a41130cb488bc1da8db59591308b4aaed986a6c14f3e294f4",
+                    "download_size": 32596,
+                    "download_url": "https://github.com/MitjaNemec/ReplicateLayout/releases/download/1.3.5/ReplicateLayout-1.3.5-pcm.zip",
+                    "install_size": 119801,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.3.5"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://mitxela.com"
+                },
+                "name": "mitxela"
+            },
+            "description": "A subdivision- and/or native arc-based track rounding plugin.",
+            "description_full": "Algorithmically smooth tracks in a predictable manner. Useful for flex PCBs, or just because it looks cool.",
+            "identifier": "com.github.mitxela.kicad-round-tracks",
+            "license": "Apache-2.0",
+            "name": "Round Tracks",
+            "resources": {
+                "homepage": "https://github.com/mitxela/kicad-round-tracks"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "5f0e15a8e12db58b91c70154cbfcc4d293309af2f1aad503d1560e7b375800f3",
+                    "download_size": 15881,
+                    "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.5/kicad-round-tracks-1.5.zip",
+                    "install_size": 33698,
+                    "kicad_version": "7.0.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.5"
+                },
+                {
+                    "download_sha256": "4466d0a379c25773c07bac3a76815745bbae40576eb3b3fb6eeec22812788547",
+                    "download_size": 15878,
+                    "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.4/kicad-round-tracks-1.4.zip",
+                    "install_size": 33698,
+                    "kicad_version": "7.0.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.4"
+                },
+                {
+                    "download_sha256": "e4d1087cf726018840f5f75291aae55de8cece49e2bada30be1e19ab6b474c40",
+                    "download_size": 15433,
+                    "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.2/kicad-round-tracks-1.2.zip",
+                    "install_size": 32694,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.2"
+                },
+                {
+                    "download_sha256": "3ac65b3be5f1acd3e56583846d49b19ff425ed0a03154c775f4d655cd30fbdcc",
+                    "download_size": 14742,
+                    "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.1/kicad-round-tracks-1.1.zip",
+                    "install_size": 29430,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.1"
+                },
+                {
+                    "download_sha256": "0ee531e5f324e22af07df691d529848e36f9960c2e0cf9ce8d4da3c2bcf0cc21",
+                    "download_size": 14632,
+                    "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.0/kicad-round-tracks-1.0.zip",
+                    "install_size": 29167,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "http://antonsavov.net"
+                },
+                "name": "Anton Savov"
+            },
+            "description": "Schematic theme that mimics Pen and Paper",
+            "description_full": "Dark ink for the symbols, blue ink for the wires and values, red ink for the labels, vibrant yellow for the selected objects. Use Lines for the grid!",
+            "identifier": "com.gitlab.antto.kicad-themes.hartia",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://gitlab.com/antto/kicad-themes"
+                },
+                "name": "antto"
+            },
+            "name": "Hartia Theme",
+            "resources": {
+                "homepage": "https://gitlab.com/antto/kicad-themes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "12be4d6f0b2c2056ed363db94ee8c20b1d4a7e51243f035b85cbc8255746b439",
+                    "download_size": 9387,
+                    "download_url": "https://gitlab.com/antto/kicad-themes/-/raw/main/hartia/com.gitlab.antto.kicad-themes.hartia.zip",
+                    "install_size": 14877,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://www.pcbway.com"
+                },
+                "name": "PCBWay.com"
+            },
+            "description": "Start prototype and assembly by sending files to PCBWay with just one click.",
+            "description_full": "Click this plugin for high quality prototyping and assembly services, PCBWay will commit to meeting your needs to the greatest extent.\n\nWhen you click PCBWay Plug-in button, we will export these files in your project:\n\n1. Gerber files in correct format for production\n2. IPC-Netlist file\n3. Bom-file that includes all information of components (please note designator, quantity, MPN/part number, package/footprint are necessary)\n4. Pick and Place-file used in assembly\n\nYou can click \"Save to Cart\" to place an order immediately after uploading the files ( usually only takes a few seconds), our engineers will double check the files before the production.\n\nAbout PCBWay:\n\nPCBWay is a Chinese company specializing in PCB prototyping and assembly, devotes to offer one-stop service. The build-time for standard PCBs is 24hrs. Our upgraded material with TG150-160 costs as low as $5/10pcs while our remarkable after-sale services are standing by for any questions you may encounter. As a sponsor of KiCad, we will always support its development.",
+            "identifier": "com.github.pcbway.PCBWay-Plug-in-for-Kicad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://www.pcbway.com"
+                },
+                "name": "PCBWay.com"
+            },
+            "name": "PCBWay Plug-in for KiCad",
+            "resources": {
+                "homepage": "https://github.com/pcbway/PCBWay-Plug-in-for-Kicad"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "8c45a26a6a98fe95686ef434878a8f13b0fa65177e37df8eade9d903d92a7407",
+                    "download_size": 11384,
+                    "download_url": "https://github.com/pcbway/PCBWay-Plug-in-for-Kicad/releases/download/0.3.1/KiCadToPCBWay_v0.3.1.zip",
+                    "install_size": 19737,
+                    "kicad_version": "6.00",
+                    "status": "testing",
+                    "version": "0.3.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/MitjaNemec"
+                },
+                "name": "Mitja Nemec"
+            },
+            "description": "The plugin can save and restore partial layout of footprints from one hierarchical sheet",
+            "description_full": "This plugin implements footprint modules or snippets feature. The plugin saves partial layout corresponding to footprints from one hirearchical sheet so that it can be restored in other projects. All projects have to use the same hierarchical sheet schematics. If the schematics has been edited, the plugin will refuse to restore the layout. So in projects where you need to change the schematics slightly, first restore the layout and then change the schematics.",
+            "identifier": "com.github.MitjaNemec.SaveRestoreLayout",
+            "license": "GPL-2.0",
+            "name": "Save/Restore Layout",
+            "resources": {
+                "homepage": "https://github.com/MitjaNemec/SaveRestoreLayout"
+            },
+            "tags": [
+                "pcbnew",
+                "footprints",
+                "arrange"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "ca748f3f39b51d477099e6c382ce87100575277e5b34c727ffab8a9d9d8acd8b",
+                    "download_size": 29560,
+                    "download_url": "https://github.com/MitjaNemec/SaveRestoreLayout/releases/download/3.0.1/SaveRestoreLayout-3.0.1-pcm.zip",
+                    "install_size": 95998,
+                    "kicad_version": "7.99",
+                    "kicad_version_max": "8.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "3.0.1"
+                },
+                {
+                    "download_sha256": "2794187b9a55d1add132e8b35ebe6b525fba831f6fbfc123d673257bbeb52ecc",
+                    "download_size": 28692,
+                    "download_url": "https://github.com/MitjaNemec/SaveRestoreLayout/releases/download/2.1.2/SaveRestoreLayout-2.1.2-pcm.zip",
+                    "install_size": 91184,
+                    "kicad_version": "6.99",
+                    "kicad_version_max": "7.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "2.1.2"
+                },
+                {
+                    "download_sha256": "d559e12cce0b0ebe8b9c313ce62d0b358ef462fba53de5e063ebed3f0e9cb982",
+                    "download_size": 27742,
+                    "download_url": "https://github.com/MitjaNemec/SaveRestoreLayout/releases/download/1.1.11/SaveRestoreLayout-1.1.11-pcm.zip",
+                    "install_size": 86195,
+                    "kicad_version": "6.0.3",
+                    "kicad_version_max": "6.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.1.11"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/bennymeg"
+                },
+                "name": "Benny Megidish"
+            },
+            "description": "JLC PCB fabrication toolkit\nAutomate PCB fabrication process in conjunction with JLC PCB",
+            "description_full": "Toolkit for automating PCB fabrication process with KiCad and JLC PCB. \n\n OPTIONS: \n\u2022 Include Component Part Number in Production Files \n Add an 'MPN' field with the LCSC component part number to the footprint component options.  \n\n\u2022 Ignore Footprint in Production Files \n Select 'Exclude from position files' or 'Exclude from BOM' in the footprint properties fabrication attributes in order to ignore the footprint from the relevant file.",
+            "identifier": "com.github.bennymeg.JLC-Plugin-for-KiCad",
+            "license": "Apache-2.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/bennymeg"
+                },
+                "name": "Benny Megidish"
+            },
+            "name": "Fabrication Toolkit",
+            "resources": {
+                "homepage": "https://github.com/bennymeg/JLC-Plugin-for-KiCad"
+            },
+            "tags": [
+                "jlc",
+                "production",
+                "fabrication",
+                "toolkit"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "c3c5bbdc1821fc9759c0168d6a6923c1bfbfc938ef5a8bf3ba70a54c40f0033d",
+                    "download_size": 17447,
+                    "download_url": "https://github.com/bennymeg/JLC-Plugin-for-KiCad/releases/download/4.3.0/JLC-Plugin-for-KiCad-4.3.0.zip",
+                    "install_size": 42110,
+                    "kicad_version": "6.00",
+                    "status": "stable",
+                    "version": "4.3.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://www.nextpcb.com"
+                },
+                "name": "NextPCB.com"
+            },
+            "description": "Start prototype and assembly by sending files to NextPCB with just one click.",
+            "description_full": "Start prototype and assembly by sending files to NextPCB with just one click.",
+            "identifier": "com.gitlab.nextpcbofficial.NextPCB-Plug-in-for-Kicad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://www.nextpcb.com"
+                },
+                "name": "NextPCB.com"
+            },
+            "name": "NextPCB Plug-in for KiCad",
+            "resources": {
+                "homepage": "https://gitlab.com/nextpcbofficial/NextPCB-Plug-in-for-Kicad"
+            },
+            "type": "plugin",
+            "versions": []
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": ""
+                },
+                "name": ""
+            },
+            "description": "Track Length Calculator",
+            "description_full": "Track Length Calculator",
+            "identifier": "vn.onekiwi.length-matching",
+            "license": "MIT",
+            "name": "[Delisted] Length Matching",
+            "resources": {
+                "homepage": ""
+            },
+            "type": "plugin",
+            "versions": []
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "kicad-support@protoexpress.com"
+                },
+                "name": "Sierra Circuits"
+            },
+            "description": "Get an instant quote and order without leaving KiCad.",
+            "description_full": "Our plugin saves you time since you no longer need to output the data to send it to the PCB house. This also spares you from the errors that come with this step. Because, trust us, as a manufacturer, we see designers sending the wrong data every day, causing delays and money.\n So here's how it works: once you have completed the layout, all you need to do is go to Tools and External Plugins, and select Sierra Circuits Quote.\n A window will pop-up and show the specifications. Our plugin reads the design for a smooth quote process. Most of the board information will be automatically filled out, such as the dimensions and layer number. It is then up to you to choose the thickness, surface finish, etc. \n Review the parameters, pick the quantity and turn time, get assembly if needed, and place your order.This is as simple as it sounds!",
+            "identifier": "sierra.kicad.order",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "email": "kicad-support@protoexpress.com"
+                },
+                "name": "Sierra Support"
+            },
+            "name": "Sierra Quote Plugin",
+            "resources": {
+                "homepage": "https://www.protoexpress.com/kicad-quote-plugin/"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "9f28ea1a1a4f1414e51ac92445e9fd657f23781187f1aa69c68eff167a59aea6",
+                    "download_size": 212872,
+                    "download_url": "https://kicad-plugin-build-download-link.s3.amazonaws.com/sierra.kicad.order.v4.1.zip",
+                    "install_size": 2050175,
+                    "kicad_version": "6.0.0",
+                    "platforms": [
+                        "macos",
+                        "windows",
+                        "linux"
+                    ],
+                    "status": "stable",
+                    "version": "4.1"
+                },
+                {
+                    "download_sha256": "8a9e6e4e3b8a9915380d41b266f8a759319ecdb0c77ae93736306872c1ab12eb",
+                    "download_size": 212742,
+                    "download_url": "https://kicad-plugin-build-download-link.s3.amazonaws.com/sierra.kicad.order.v4.0.zip",
+                    "install_size": 2048570,
+                    "kicad_version": "6.0.0",
+                    "platforms": [
+                        "macos",
+                        "windows",
+                        "linux"
+                    ],
+                    "status": "stable",
+                    "version": "4.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://www.pcbgogo.com"
+                },
+                "name": "PCBGOGO.com"
+            },
+            "description": "Start prototype and assembly by sending files to PCBGOGO with just one click.",
+            "description_full": "Click this plugin for high quality prototyping and assembly services, PCBGOGO will commit to meeting your needs to the greatest extent.\n\nWhen you click PCBGOGO Plug-in button, we will export these files in your project:\n\n1. Gerber files in correct format for production\n2. IPC-Netlist file\n3. Bom-file that includes all information of components (please note designator, quantity, MPN/part number, package/footprint are necessary)\n4. Pick and Place-file used in assembly\n\nYou can click \"Save to Cart\" to place an order immediately after uploading the files ( usually only takes a few seconds), our engineers will double check the files before the production.\n\nAbout PCBGOGO:\n\nPCBGOGO is a Chinese company specializing in PCB prototyping and assembly, devotes to offer one-stop service. The build-time for standard PCBs is 24hrs. Our upgraded material with TG150-160 costs as low as $5/10pcs while our remarkable after-sale services are standing by for any questions you may encounter. As a sponsor of KiCad, we will always support its development.",
+            "identifier": "com.github.pcbgogo.PCBGOGO-Plug-in-for-Kicad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://www.pcbgogo.com"
+                },
+                "name": "PCBWay.com"
+            },
+            "name": "PCBGOGO Plug-in for KiCad",
+            "resources": {
+                "homepage": "https://github.com/pcbgogodev/PCBGOGO-Plug-in-for-Kicad"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "60d5271a80aa3ebb062f48a17a56a9629726025436f1b100b9337d8fec38d96e",
+                    "download_size": 9716,
+                    "download_url": "https://github.com/pcbgogodev/PCBGOGO-Plug-in-for-Kicad/releases/download/0.1.1/KiCadToPCBGOGO_v0.1.1.zip",
+                    "install_size": 15008,
+                    "kicad_version": "6.00",
+                    "status": "testing",
+                    "version": "0.1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "info@freerouting.app",
+                    "web": "https://www.freerouting.app/"
+                },
+                "name": "Andras Fuchs"
+            },
+            "description": "Freerouting KiCad integration",
+            "description_full": "This is the official KiCad integration for Freerouting, an advanced autorouter.\nIt needs Java JRE 17, download it from https://adoptium.net/temurin/releases .\n",
+            "identifier": "app.freerouting.kicad-plugin",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "email": "info@freerouting.app"
+                },
+                "name": "Andras Fuchs"
+            },
+            "name": "Freerouting",
+            "resources": {
+                "Github": "https://github.com/freerouting/freerouting/tree/master/integrations/KiCad"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "9806754c2448c6d4d6ea704f2627b2b31448fa39e8c4aa8c400dc19cecda0222",
+                    "download_size": 4568228,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.9.0.zip",
+                    "install_size": 5086728,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.9.0"
+                },
+                {
+                    "download_sha256": "ba428e2abe408ea5d3b97b451514b1e6ba5defe04a917e27b48c40e48d0d52b8",
+                    "download_size": 4309439,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.8.0.zip",
+                    "install_size": 4808684,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.8.0"
+                },
+                {
+                    "download_sha256": "62dc982998455e097744510b24331f1b33cee49cb90116b680349f6027618cef",
+                    "download_size": 4304221,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.7.1.zip",
+                    "install_size": 4797518,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.7.1"
+                },
+                {
+                    "download_sha256": "d737320dcc835c53975d5d4cbb99afe8e05ed015f41858d350ccffbc456cb424",
+                    "download_size": 4304240,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.7.0.zip",
+                    "install_size": 4797408,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.7.0"
+                },
+                {
+                    "download_sha256": "5b7b92448851e982dc31d54c344b6bc74e08e109ef67beae83f321aa50ffab58",
+                    "download_size": 4303331,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.6.6.zip",
+                    "install_size": 4796646,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.6.6"
+                },
+                {
+                    "download_sha256": "8eccd96f48a5f9f77b2e9c33a9fbcc99c6b12c11fdedb4d19356b7a1216497f7",
+                    "download_size": 4301604,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.6.5.zip",
+                    "install_size": 4793969,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.6.5"
+                },
+                {
+                    "download_sha256": "a72f4e5b5cedfee3ecea474315e6fc94e11fcb5480dc77a944dfe67fb2e96367",
+                    "download_size": 4095649,
+                    "download_url": "https://github.com/freerouting/freerouting/raw/master/integrations/KiCad/kicad-freerouting-1.6.2.zip",
+                    "install_size": 4526306,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.6.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://www.pcbgogo.jp"
+                },
+                "name": "PCBGOGO.jp"
+            },
+            "description": "PCBGOGO\u3092\u9001\u4fe1\u3057\u3066\u3001\u57fa\u677f\u88fd\u9020\u3068\u90e8\u54c1\u5b9f\u88c5\u30b5\u30fc\u30d3\u30b9\u3092\u5229\u7528\u3057\u307e\u3057\u3087\u3046\u3002",
+            "description_full": "KiCad\u3067\u30d7\u30ea\u30f3\u30c8\u57fa\u677f\u306e\u8a2d\u8a08\u304c\u5b8c\u4e86\u3059\u308b\u3068\u3001PCBGOGO\u30d7\u30e9\u30b0\u30a4\u30f3\u30dc\u30bf\u30f3\u3092\u30af\u30ea\u30c3\u30af\u3059\u308b\n\u3053\u3068\u3067\u3059\u3050\u306b\u898b\u7a4d\u308a\u3092\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u3001PCBGOGO\u30a6\u30a7\u30d6\u7c21\u5358\u898b\u7a4d\u3082\u308a\u30da\u30fc\u30b8\u306b\u30d7\u30ea\u30f3\u30c8\n\u57fa\u677f\u306e\u30ec\u30a4\u30a2\u30a6\u30c8\u30d5\u30a1\u30a4\u30eb\u304c\u9001\u4fe1\u3055\u308c\u3001\u88fd\u9020\u4fa1\u683c\u304c\u81ea\u52d5\u7684\u306b\u8a08\u7b97\u3055\u308c\u307e\u3059\u3002\n\u6ce8\u610f\u70b9\uff1a\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u6ce8\u6587\u6570\u91cf\u306f5\u500b\u3067\u3059\u3002\nPCBGOGO\u306b\u3064\u3044\u3066\nPCBGOGO\u306f\u3001\u30af\u30a4\u30c3\u30af\u30bf\u30fc\u30f3PCB\u306e\u8a66\u4f5c\u54c1\u3084\u30d7\u30ea\u30f3\u30c8\u57fa\u677f\u306e\u7d44\u307f\u7acb\u3066\u3060\u3051\u3067\u306a\u304f\u3001\n\u4e2d\u30fb\u5c0f\u5bb9\u91cf\u306e\u30d7\u30ea\u30f3\u30c8\u57fa\u677f\u306e\u88fd\u9020\u306b\u3082\u9ad8\u3044\u5c02\u9580\u6027\u306b\u7279\u5316\u3057\u3066\u3044\u307e\u3059\u3002\u4e09\u3064\u306e\u5de5\u5834\u304c\n17,000\u5e73\u65b9\u30e1\u30fc\u30c8\u30eb\u4ee5\u4e0a\u306e\u898f\u6a21\u3067\u8a2d\u7acb\u3055\u308c\u3066\u3044\u307e\u3059\u3002",
+            "identifier": "com.github.pcbgogo.PCBGOGO-JP-Plug-in-for-Kicad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://www.pcbgogo.jp"
+                },
+                "name": "PCBGOGO.jp"
+            },
+            "name": "KiCad\u7528PCBGOGO\u30d7\u30e9\u30b0\u30a4",
+            "resources": {
+                "homepage": "https://github.com/pcbgogodev/PCBGOGO-JP-Plug-in-for-Kicad"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "8867901a893da0c812616673ff59c61e3152e7cd0b3f928f621d01a6be70fbef",
+                    "download_size": 10187,
+                    "download_url": "https://github.com/pcbgogodev/PCBGOGO-JP-Plug-in-for-Kicad/releases/download/0.1.2/KiCadToPCBGOGOJP_v0.1.2.zip",
+                    "install_size": 15241,
+                    "kicad_version": "6.00",
+                    "status": "testing",
+                    "version": "0.1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://thea.codes"
+                },
+                "name": "Alethea Katherine Flowers"
+            },
+            "description": "Dark theme designed by @theacodes",
+            "description_full": "Dark theme designed by @theacodes",
+            "identifier": "codes.thea.witchhazel",
+            "license": "Apache-2.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://thea.codes"
+                },
+                "name": "Alethea Katherine Flowers"
+            },
+            "name": "Witch Hazel",
+            "resources": {
+                "Github": "https://github.com/theacodes/witchhazel",
+                "Website": "https://witchhazel.thea.codes"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "bac5022d0b7c83b865a446eeb77466dc34f7c0a47035bb653ef5dbe414105721",
+                    "download_size": 7281,
+                    "download_url": "https://github.com/theacodes/witchhazel/releases/download/2022.11.18/kicad-witchhazel.zip",
+                    "install_size": 13890,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "2022.11.18"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "js.reynaud@gmail.com"
+                },
+                "name": "jsreynaud"
+            },
+            "description": "ViaStitching and more tools ",
+            "description_full": "Via stitching action tool and circular zone builder action tool. Use the action menu/toolbar feature.",
+            "identifier": "com.github.jsreynaud.kicad-action-scripts",
+            "license": "GPL-2.0",
+            "name": "kicad-action-scripts",
+            "resources": {
+                "Github": "https://github.com/jsreynaud/kicad-action-scripts",
+                "Readme": "https://github.com/jsreynaud/kicad-action-scripts/blob/master/README.md"
+            },
+            "tags": [
+                "annular",
+                "pcbnew",
+                "dxf",
+                "grid",
+                "mcad"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "79f0c0b4b0a2d99d1606a3d391139eba3b9990447a9a23f8d9c3fccab0d861c0",
+                    "download_size": 51689,
+                    "download_url": "https://github.com/jsreynaud/kicad-action-scripts/releases/download/v8.0-0.5.0/kicad-action-scripts_v8.0-0.5.0.zip",
+                    "install_size": 286862,
+                    "kicad_version": "8.0",
+                    "kicad_version_max": "8.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "8.0.5"
+                },
+                {
+                    "download_sha256": "922f5daac3ad5daeb76fb128ff509a108b37ddfcd4d8bf0902a95e1ab7f3c042",
+                    "download_size": 51780,
+                    "download_url": "https://github.com/jsreynaud/kicad-action-scripts/releases/download/v7.0-0.4.0/kicad-action-scripts_v7.0-0.4.0.zip",
+                    "install_size": 288098,
+                    "kicad_version": "7.0",
+                    "kicad_version_max": "7.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "7.0.4"
+                },
+                {
+                    "download_sha256": "643ea19928db3a8451d044e9cfa42cd3ee452bc8a72bfc6b0d60f68c1748e5cc",
+                    "download_size": 51208,
+                    "download_url": "https://github.com/jsreynaud/kicad-action-scripts/releases/download/v7.0-0.3.0/kicad-action-scripts_v7.0-0.3.0.zip",
+                    "install_size": 276785,
+                    "kicad_version": "7.0",
+                    "kicad_version_max": "7.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "7.0.3"
+                },
+                {
+                    "download_sha256": "976525775d5a2d74be17bc2f6b23e4a660cd6554686eb8c4990234b052be2ede",
+                    "download_size": 52163,
+                    "download_url": "https://github.com/jsreynaud/kicad-action-scripts/releases/download/v6.0-0.2.0/kicad-action-scripts_v6.0-0.2.0.zip",
+                    "install_size": 276266,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "6.0.1"
+                },
+                {
+                    "download_sha256": "3790d1ca1e4dc9b0d2fa68c61b3afa8453c4bf6a11dc3b46597195b6bf9126c2",
+                    "download_size": 51235,
+                    "download_url": "https://github.com/jsreynaud/kicad-action-scripts/releases/download/v5.1-0.2.0/kicad-action-scripts_v5.1-0.2.0.zip",
+                    "install_size": 297879,
+                    "kicad_version": "5.1",
+                    "kicad_version_max": "5.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "5.1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/JarrettR",
+                    "web": "https://jrainimo.com"
+                },
+                "name": "Jarrett Rainier"
+            },
+            "description": "KiCad to SVG and then back again",
+            "description_full": "Seamless artistic workflow for KiCad and Inkscape.\n\nUsers can start by drawing a schematic and laying out a PCB, then bring it into Inkscape to arrange a thousand LEDs into a flower arrangement, then bring it back into KiCad to lay out traces, back into Inkscape to curve the traces, back into KiCad to change their microcontroller and few pin assignments, back into Inkscape to draw out some silkscreem patterns, back into KiCad to run DRC, and so on. The workflow is intended to be seamless and painless to go back and forth.\n\nClick the homepage link - https://github.com/JarrettR/Stretch - to see how it works.",
+            "identifier": "com.github.jarrettr.stretch",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/JarrettR",
+                    "web": "https://jrainimo.com"
+                },
+                "name": "Jarrett Rainier"
+            },
+            "name": "Stretch",
+            "resources": {
+                "homepage": "https://github.com/JarrettR/Stretch"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "34e7c5f475a5a10e4c3a13ecae87dcba07f43f006fcdf26227e8dbc113d73219",
+                    "download_size": 49077,
+                    "download_url": "https://github.com/JarrettR/Stretch/releases/download/1.3/Stretch-1.3-pcm.zip",
+                    "install_size": 155931,
+                    "kicad_version": "8.0",
+                    "status": "stable",
+                    "version": "1.3"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://adamws.github.io"
+                },
+                "name": "adamws"
+            },
+            "description": "Plugin for mechanical keyboard design",
+            "description_full": "Plugin for mechanical keyboard design.\nIt features automatic key placement and routing based on various layout descriptions like <a href='www.keyboard-layout-editor.com'>kle</a>, <a href='www.github.com/ergogen/ergogen'>ergogen</a> and <a href='www.caniusevia.com'>via</a>.\nTo learn more visit project's homepage.",
+            "identifier": "com.github.adamws.kicad-kbplacer",
+            "license": "GPL-3.0",
+            "name": "Keyboard footprints placer",
+            "resources": {
+                "Bug Tracker": "https://github.com/adamws/kicad-kbplacer/issues",
+                "Homepage": "https://github.com/adamws/kicad-kbplacer",
+                "Sponsor": "https://ko-fi.com/adamws"
+            },
+            "tags": [
+                "keyboard"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "77b3459d26382b09c74e71212feb7dd511e0c4e3a470b0d596658e6d12abd15e",
+                    "download_size": 184169,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.9/kbplacer-0.9.zip",
+                    "install_size": 180359,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "0.9"
+                },
+                {
+                    "download_sha256": "defeb0972716db4d425f5ea4cfd389571b70b7df492bbc66d7ec9b5d182f53df",
+                    "download_size": 145740,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.8/kbplacer-0.8.zip",
+                    "install_size": 142378,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0.11",
+                    "status": "stable",
+                    "version": "0.8"
+                },
+                {
+                    "download_sha256": "00e414b6030cdff997e5b6598e05e9fd403e84ae67c13b866aedf3fce923bab4",
+                    "download_size": 141892,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.7/kbplacer-0.7.zip",
+                    "install_size": 138688,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0.11",
+                    "status": "stable",
+                    "version": "0.7"
+                },
+                {
+                    "download_sha256": "a368b94979642144a97d74d0af3bb655435deee56d81e5df19dbd78aaeaafa6a",
+                    "download_size": 38823,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.6/kicad-kbplacer.zip",
+                    "install_size": 113988,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0.11",
+                    "status": "stable",
+                    "version": "0.6"
+                },
+                {
+                    "download_sha256": "27c68e121f312cf0761a062fecc8b071997fce135c47801682402e8be62a231b",
+                    "download_size": 22174,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.5/kicad-kbplacer.zip",
+                    "install_size": 65533,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0.6",
+                    "status": "stable",
+                    "version": "0.5"
+                },
+                {
+                    "download_sha256": "b04e271dcec90745f786659bddabece2a378d6de626b30c95cc8a2822426222d",
+                    "download_size": 17579,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.4/kicad-kbplacer.zip",
+                    "install_size": 45449,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0.6",
+                    "status": "stable",
+                    "version": "0.4"
+                },
+                {
+                    "download_sha256": "572e80d1bfceba4a0156e33fe58eeaa86cd59d53a4e63bef399297c0b5b0e1e8",
+                    "download_size": 13975,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.3/kicad-kbplacer.zip",
+                    "install_size": 31740,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0.6",
+                    "status": "stable",
+                    "version": "0.3"
+                },
+                {
+                    "download_sha256": "83aca6a74d6af66447821f9b21e33a7ca36a3389b735801e72ea9f47c35a0d7e",
+                    "download_size": 12097,
+                    "download_url": "https://github.com/adamws/kicad-kbplacer/releases/download/v0.2/kicad-kbplacer.zip",
+                    "install_size": 24731,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.0",
+                    "status": "stable",
+                    "version": "0.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/cooked/kimotor"
+                },
+                "name": "Stefano Cottafavi"
+            },
+            "description": "PCB motor parametric design and layout",
+            "description_full": "PCB motor parametric design and layout",
+            "identifier": "com.github.cooked.kimotor",
+            "license": "GPL-2.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/cooked/kimotor"
+                },
+                "name": "Stefano Cottafavi"
+            },
+            "name": "kimotor",
+            "resources": {
+                "homepage": "https://github.com/cooked/kimotor"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "93d8e058af7bd750c58187cdbe0fd46aad37436bc563a38ed8f6ae05cd78cbfe",
+                    "download_size": 28817,
+                    "download_url": "https://github.com/cooked/kimotor/releases/download/v0.1.2/kimotor-pcm.zip",
+                    "install_size": 102997,
+                    "kicad_version": "6.0",
+                    "status": "development",
+                    "version": "0.1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/CGrassin",
+                    "web": "https://charleslabs.fr"
+                },
+                "name": "Charles Grassin"
+            },
+            "description": "Generates pinouts of components from a PCB file to various formats",
+            "description_full": "This KiCad plugin generates pinouts of components from a PCB file to various formats:\n\u2022 Text formats for documentation: Markdown table, HTML table, CSV, List (tab separated), WireViz\n\u2022 Code format for software development: C/C++ enums, C/C++ #define, Python/MicroPython dict., Xilinx XDC constraint (FPGA), Microsemi PDC constraint (FPGA)\n\nExample applications:\n\u2022 Automatically create the pin assignement from a microcontroller to C code,\n\u2022 Generate interface documents for connectors.",
+            "identifier": "com.github.cgrassin.kicad-pinout-generator",
+            "license": "MIT",
+            "name": "Pinout Generator",
+            "resources": {
+                "homepage": "https://github.com/CGrassin/kicad-pinout-generator"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "deedb39c24cb123131b0f229efe891a48613123050929f2567af81632716ff0b",
+                    "download_size": 9400,
+                    "download_url": "https://github.com/CGrassin/kicad-pinout-generator/releases/download/release_1.1/kicad-pinout-generator_1.1.zip",
+                    "install_size": 21219,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0",
+                    "status": "stable",
+                    "version": "1.1"
+                },
+                {
+                    "download_sha256": "4ac7e7f0d14279cf2d2c714ce8ee25bdddf0dbd3f5725a9b335e7d217947a117",
+                    "download_size": 9164,
+                    "download_url": "https://github.com/CGrassin/kicad-pinout-generator/releases/download/release_1.0/kicad-pinout-generator_1.0.zip",
+                    "install_size": 20261,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "7.0",
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "mail@qu1ck.org"
+                },
+                "name": "qu1ck"
+            },
+            "description": "Batch resize, scale, mirror graphics, tracks, zones, footprints and other items in the PCB editor.",
+            "description_full": "Batch resize, scale, mirror graphics, tracks, zones, footprints and other items in the PCB editor.\nInspired by free transform tool in graphics editors.\nImportant notes:\n\u2022 Mirror does not change layers, it transforms in place\n\u2022 When a singular footprint is selected it's items are scaled so the footprint itself will become larger/smaller\n\u2022 When more than one item is selected footprints are not changed or rescaled, only repositioned/rotated\n\u2022 Pads are not rescaled, only repositioned/rotated\n\u2022 Rotation center is geometrical center of combined bounding box of all selected items",
+            "identifier": "org.openscopeproject.TransformIt",
+            "license": "MIT",
+            "name": "Transform It",
+            "resources": {
+                "Forum": "https://forum.kicad.info/t/transformit-plugin-batch-scale-mirror-rotate-all-the-things/40336",
+                "Github": "https://github.com/openscopeproject/TransformIt"
+            },
+            "tags": [
+                "scale",
+                "rotate",
+                "mirror",
+                "graphics"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "7d93db4f0444ada004861ce19ce5c6c99f00c5b8e4cd3c32e02e45a7faa3f189",
+                    "download_size": 10063,
+                    "download_url": "https://github.com/openscopeproject/TransformIt/releases/download/v1.2/TransformIt_v1.2_pcm.zip",
+                    "install_size": 24964,
+                    "kicad_version": "7.0",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/Alarm-Siren/"
+                },
+                "name": "Nicholas Parks Young"
+            },
+            "description": "KiCad Symbol and Footprint Library for Arduino Modules",
+            "description_full": "You may need to manually update the library tables in the Library Manager to get the new symbols and footprints to show up: please refer to the GitHub link below for full documentation and installation instructions.\n\nThis is a library of KiCad schematic symbols and PCB footprints for most Arduino modules. You can use them to make your own PCB design which will effortlessly connect with your chosen Arduino module.",
+            "identifier": "com.github.alarm-siren.arduino-kicad-library",
+            "license": "CC-BY-SA-4.0",
+            "name": "KiCad Library for Arduino Modules",
+            "resources": {
+                "github": "https://github.com/Alarm-Siren/arduino-kicad-library"
+            },
+            "tags": [
+                "footprints",
+                "symbols",
+                "arduino",
+                "modules"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "3e47f464d326b4c4752d4a0c725b92ec571c61d7b20d8f6d8f654e26349aff56",
+                    "download_size": 162805,
+                    "download_url": "https://github.com/Alarm-Siren/arduino-kicad-library/releases/download/v4.2.0/arduino-kicad-library-4.2.0-pcm.zip",
+                    "install_size": 931125,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "4.2.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {},
+                "name": "mgyger"
+            },
+            "description": "Plugin to modify boards to have octagonal looking pads and vias.",
+            "description_full": "Creates octagonal filleted pads and vias by modifying them and/or adding zones, similar to how teardrops work. The PCB needs to be prepared first with\nTools \u2192 Cleanup Tracks &amp; Vias\u2026 \u2192 \u2612 Merge co-linear tracks\nClicking the Oktizer tool button or choosing\nTools \u2192 External Plugins\u2026 \u2192 Oktizer\nmodifies the selected pads and vias, or all round and rectangular PTH pads and vias if there is no selection.",
+            "identifier": "com.gitlab.mgyger.oktizer",
+            "license": "CC0-1.0",
+            "name": "Oktizer Action Plugin",
+            "resources": {
+                "Repository": "https://gitlab.com/mgyger/kicad-addons"
+            },
+            "tags": [
+                "octagon",
+                "action",
+                "plugin",
+                "python",
+                "pcb",
+                "pcbnew",
+                "elektuur",
+                "elektor"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "d349228c79da4af530d476dff43332372a8eaa24a65da94f2106eb6bdb32faab",
+                    "download_size": 8713,
+                    "download_url": "https://gitlab.com/mgyger/kicad-addons/-/raw/main/kicad-oktizer-0.7.0.zip",
+                    "install_size": 27122,
+                    "kicad_version": "5.1",
+                    "kicad_version_max": "7.0",
+                    "status": "stable",
+                    "version": "0.7.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {},
+                "name": "mgyger"
+            },
+            "description": "Generic Elektuur style symbols, primarily intended for circuit diagrams used for documentation and SPICE simulation.",
+            "description_full": "Elektuur style symbols as introduced in the later 1970s (until the early 1990s when they became more angular).\nThe symbol sizes have been increased by 1.6\u202f% (2\u202fmm grid to 80\u202fmil grid) and the pins realigned to a 2.54\u202fmm (100\u202fmil) grid.\nRecommended Schematic Setup: default line width and wire thickness 0.254\u202fmm (10\u202fmil), junction dot size Small (40\u202fmil), text size 1.27\u202fmm (50\u202fmil), grid 2.54\u202fmm (100\u202fmil), automatically place symbol fields unchecked.",
+            "identifier": "com.gitlab.mgyger.elektuur",
+            "license": "CC0-1.0",
+            "name": "Elektuur Style Symbol Library",
+            "resources": {
+                "Repository": "https://gitlab.com/mgyger/kicad-addons/"
+            },
+            "tags": [
+                "elektuur",
+                "elektor",
+                "symbols",
+                "generic",
+                "documentation",
+                "simulation",
+                "spice",
+                "ngspice",
+                "footprints"
+            ],
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "7c8320973fb7bec5e71ffd24bf57e7f90d0ad4a2069320439ef387f8c71ad116",
+                    "download_size": 87066,
+                    "download_url": "https://gitlab.com/mgyger/kicad-addons/-/raw/main/kicad-elektuur-symbols-0.7.0.zip",
+                    "install_size": 366398,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "0.7.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/ulikoehler",
+                    "web": "https://techoverflow.net"
+                },
+                "name": "Uli K\u00f6hler"
+            },
+            "description": "Hide all silkscreen reference designators for selected footprints",
+            "description_full": "Hide all silkscreen reference designators for selected footprints",
+            "identifier": "com.github.ulikoehler.kicad-bulk-hide-silkscreen-designators",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/ulikoehler",
+                    "web": "https://techoverflow.net"
+                },
+                "name": "Uli K\u00f6hler"
+            },
+            "name": "Bulk hide silkscreen designators",
+            "resources": {
+                "homepage": "https://github.com/ulikoehler/KiCADBulkHideSilkscreenDesignators"
+            },
+            "tags": [
+                "silkscreen",
+                "hide",
+                "visible",
+                "efficiency"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "1ed6606cfe6089b11a4197508db0dd12181443d8128649d362530c34bc03d5e0",
+                    "download_size": 5458,
+                    "download_url": "https://github.com/ulikoehler/KiCADBulkHideSilkscreenDesignators/releases/download/v1.0.0/kicad-package.zip",
+                    "install_size": 5897,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.0.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://jp.nextpcb.com"
+                },
+                "name": "jp.nextpcb.com"
+            },
+            "description": "\u30ef\u30f3\u30af\u30ea\u30c3\u30af\u3067\u30d5\u30a1\u30a4\u30eb\u3092NextPCB\u306b\u9001\u4fe1\u3057\u3001\u88fd\u9020\u3092\u958b\u59cb\u3057\u307e\u3059\u3002",
+            "description_full": "\u3053\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u62bc\u3059\u3053\u3068\u3067NextPCB\u306f\u304a\u5ba2\u69d8\u306e\u3054\u8981\u671b\u306b\u6700\u5927\u9650\u306e\u7bc4\u56f2\u3067\u304a\u5fdc\u3048\u3057\u307e\u3059\u3002\n\n NextPCB\u30d7\u30e9\u30b0\u30a4\u30f3\u30dc\u30bf\u30f3\u3092\u62bc\u3059\u3068\u3001\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30d5\u30a1\u30a4\u30eb\u3092\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002\n\n 1. \u88fd\u54c1\u7528\u306e\u6b63\u3057\u3044\u5f62\u5f0f\u306e\u30ac\u30fc\u30d0\u30d5\u30a1\u30a4\u30eb\n 2. IPC\u30cd\u30c3\u30c8\u30ea\u30b9\u30c8\u30d5\u30a1\u30a4\u30eb\n3. \u90e8\u54c1\u306e\u5168\u3066\u306e\u60c5\u5831\u3092\u542b\u3093\u3060BOM\u30d5\u30a1\u30a4\u30eb(\u30c7\u30b8\u30b0\u30cd\u30fc\u30bf\u3001\u6570\u91cf\u3001MPN/\u90e8\u54c1\u756a\u53f7\u3001\u30d1\u30c3\u30b1\u30fc\u30b8\u3001\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8\u306e\u8a18\u8f09\u304c\u5fc5\u9808\u3067\u3059\u3002)\n 4. \u7d44\u307f\u7acb\u3066\u306b\u4f7f\u308f\u308c\u308bPick&Place\u30d5\u30a1\u30a4\u30eb\n\n \u30d5\u30a1\u30a4\u30eb\u3092\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u5f8c\"Save to Cart\"\u3092\u30af\u30ea\u30c3\u30af\u3059\u308b\u3053\u3068\u3067\u3059\u3050\u306b\u6ce8\u6587\u3067\u304d\u307e\u3059\u3002 ( \u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u306b\u306f\u6570\u79d2\u304b\u304b\u308a\u307e\u3059), \u88fd\u9020\u524d\u306b\u5f53\u793e\u306e\u30a8\u30f3\u30b8\u30cb\u30a2\u306b\u3088\u308b\u4e8c\u5ea6\u306e\u691c\u67fb\u304c\u884c\u308f\u308c\u307e\u3059\u3002\n\n NextPCB\u306b\u3064\u3044\u3066\n\n NextPCB\u306f\u4e2d\u56fd\u306b\u672c\u793e\u3092\u7f6e\u304f\u3001\u30ef\u30f3\u30b9\u30c8\u30c3\u30d7\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u57fa\u677f\u306e\u7d44\u307f\u7acb\u3066\u3068\u5b9f\u88c5\u3092\u5f97\u610f\u3068\u3059\u308b\u30e1\u30fc\u30ab\u30fc\u3067\u3059\u3002 \u901a\u5e38\u306ePCB\u306a\u308924\u6642\u9593\u4ee5\u5185\u306e\u88fd\u9020\u3092\u53ef\u80fd\u3068\u3057\u3066\u3044\u307e\u3059\u3002TG150-160\u306e\u9ad8\u54c1\u8cea\u7d20\u6750\u3092$5/10pcs\u306e\u4f4e\u4fa1\u683c\u3067\u63d0\u4f9b\u3057\u3001\u30a2\u30d5\u30bf\u30fc\u30b5\u30fc\u30d3\u30b9\u3082\u5145\u5b9f\u3055\u305b\u3066\u3044\u307e\u3059\u3002KiCAD\u306e\u30b9\u30dd\u30f3\u30b5\u30fc\u3068\u3057\u3066\u3001\u3042\u306a\u305f\u306e\u958b\u767a\u3092\u5168\u529b\u3067\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002",
+            "identifier": "com.gitlab.nextpcbofficial.NextPCB-JP-Plug-in-for-Kicad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://jp.nextpcb.com"
+                },
+                "name": "jp.nextpcb.com"
+            },
+            "name": "NextPCB JP Kicad\u7528\u30d7\u30e9\u30b0\u30a4\u30f3",
+            "resources": {
+                "homepage": "https://gitlab.com/nextpcbofficial/NextPCB-JP-Plug-in-for-Kicad"
+            },
+            "type": "plugin",
+            "versions": []
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/Steffen-W"
+                },
+                "name": "Steffen Wittemeier"
+            },
+            "description": "Import library files from Octopart, Samacsys, Ultralibrarian and Snapeda",
+            "description_full": "Import library files from Octopart, Samacsys, Ultralibrarian and Snapeda.\n For usage and correct setup please read the Readme: \n https://github.com/Steffen-W/Import-LIB-KiCad-Plugin#use-of-the-application",
+            "identifier": "com.github.Steffen-W.impartGUI",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/Steffen-W"
+                },
+                "name": "Steffen Wittemeier"
+            },
+            "name": "impart GUI for KiCad",
+            "resources": {
+                "homepage": "https://github.com/Steffen-W/Import-LIB-KiCad-Plugin"
+            },
+            "tags": [
+                "import",
+                "library",
+                "octopart",
+                "samacsys",
+                "ultralibrarian",
+                "snapeda"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "3c4c926d7a00bce0edfcd1ad20ba3be52bb2494f529b2c6198081525dbc32262",
+                    "download_size": 27837,
+                    "download_url": "https://github.com/Steffen-W/Import-LIB-KiCad-Plugin/releases/download/2024.04.08/Import-LIB-KiCad-Plugin.zip",
+                    "install_size": 72143,
+                    "kicad_version": "6.00",
+                    "status": "stable",
+                    "version": "2024.04.08"
+                },
+                {
+                    "download_sha256": "747bfdbfc34edc160cbf6f77462c16aa5064c68c1adc076930a1a1c7fef0f695",
+                    "download_size": 27824,
+                    "download_url": "https://github.com/Steffen-W/Import-LIB-KiCad-Plugin/releases/download/2024.02.24/Import-LIB-KiCad-Plugin.zip",
+                    "install_size": 71950,
+                    "kicad_version": "6.00",
+                    "status": "stable",
+                    "version": "2024.02.24"
+                },
+                {
+                    "download_sha256": "2d12590b3e6a0d6e0ff0332b62edc5de5d8abf1af91d6b0d39de841d7d2c55c4",
+                    "download_size": 27761,
+                    "download_url": "https://github.com/Steffen-W/Import-LIB-KiCad-Plugin/releases/download/2023.10.20/Import-LIB-KiCad-Plugin.zip",
+                    "install_size": 71362,
+                    "kicad_version": "6.00",
+                    "status": "stable",
+                    "version": "2023.10.20"
+                },
+                {
+                    "download_sha256": "9850811d03e4c2bb3e84ec4f15dd31238600aa0b1481a8c4978319761da27e78",
+                    "download_size": 24870,
+                    "download_url": "https://github.com/Steffen-W/Import-LIB-KiCad-Plugin/releases/download/v0.3.0/Import-LIB-KiCad-Plugin.zip",
+                    "install_size": 57178,
+                    "kicad_version": "6.00",
+                    "status": "stable",
+                    "version": "0.3.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://asukiaaa.blogspot.com"
+                },
+                "name": "Asuki Kono"
+            },
+            "description": "Create gerber files for some PCB order services.",
+            "description_full": "Create zip files which includes gerber files for each PCB services.",
+            "identifier": "com.github.asukiaaa.gerber-to-order",
+            "license": "MIT",
+            "name": "gerber to order",
+            "resources": {
+                "homepage": "https://github.com/asukiaaa/gerber_to_order"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "9f26171948514baa4466ed3c3a9e17f69375bc8f266fb65287d715fac80302ac",
+                    "download_size": 19910,
+                    "download_url": "https://github.com/asukiaaa/gerber_to_order/releases/download/1.0.3/kicad-addon.zip",
+                    "install_size": 33448,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.0.3"
+                },
+                {
+                    "download_sha256": "c03d99400a62fa2e3ce17699af01d75ea0aca897c8e1d281fa31020b7ecb8fc8",
+                    "download_size": 19858,
+                    "download_url": "https://github.com/asukiaaa/gerber_to_order/releases/download/1.0.2/kicad-addon.zip",
+                    "install_size": 33329,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.0.2"
+                },
+                {
+                    "download_sha256": "4a937d06316c02b710017d4c96d6905b824acdce993f6d7666cf9df862e91be1",
+                    "download_size": 19851,
+                    "download_url": "https://github.com/asukiaaa/gerber_to_order/releases/download/1.0.1/kicad-addon.zip",
+                    "install_size": 33318,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.0.1"
+                },
+                {
+                    "download_sha256": "fbe8eeb68cd4d4c204333c9e88dabc502ab969ec1ef6beab097fa9870796a872",
+                    "download_size": 19695,
+                    "download_url": "https://github.com/asukiaaa/gerber_to_order/releases/download/1.0.0/kicad-addon.zip",
+                    "install_size": 32808,
+                    "kicad_version": "6.0",
+                    "kicad_version_max": "6.0",
+                    "status": "stable",
+                    "version": "1.0.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://circuitbreakerssl.com"
+                },
+                "name": "CircuitBreakers Robotics"
+            },
+            "description": "User-friendly library package for beginners by CircuitBreakers Robotics",
+            "description_full": "CircuitBreakers Robotics KiCAD library pack is a collection of common electronic components libraries for the free and open-source KiCAD PCB design software. The goal of CircuitBreakers KiCAD Libraries is to provide a user-friendly library package  for beginners.",
+            "identifier": "com.github.circuitbreakersrobotics.CB-KiCAD-Libraries",
+            "license": "CC-BY-SA-4.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://circuitbreakerssl.com"
+                },
+                "name": "CircuitBreakers Robotics"
+            },
+            "name": "CB KiCAD Libraries",
+            "resources": {
+                "GitHub": "https://github.com/circuitbreakersrobotics/CB_KiCAD_Libraries"
+            },
+            "type": "library",
+            "versions": []
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/74th"
+                },
+                "name": "Atsushi Morimoto (@74th)"
+            },
+            "description": "high contrast monokai theme arranged by @74th",
+            "description_full": "high contrast monokai theme arranged by @74th",
+            "identifier": "com.github.74th.kicad-highcontrast-monokai-theme.monokai-high-contrast",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/74th/kicad-highcontrast-monokai-theme"
+                },
+                "name": "Atsushi Morimoto (@74th)"
+            },
+            "name": "Monokai High Contrast",
+            "resources": {
+                "Github": "https://github.com/74th/kicad-highcontrast-monokai-theme"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "a631d510e3ec69d5076c8d105695ae88099b3d16e1f5bf88b00002d1311b7f86",
+                    "download_size": 12585,
+                    "download_url": "https://github.com/74th/kicad-highcontrast-monokai-theme/releases/download/v1.0.1/com.github.74th.kicad-highcontrast-monokai-theme.monokai-high-contrast_v1.0.1_pcm.zip",
+                    "install_size": 20923,
+                    "kicad_version": "6.00",
+                    "status": "stable",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://2231puppy.tech"
+                },
+                "name": "2231puppy"
+            },
+            "description": "Purple KiCad theme. Forked from Dracula, it's dark. Try it out today!",
+            "description_full": "Vampires can't stand light. I've also heard rumors that they love pink and purple. Put those two things together, and you get a dark purple theme with pink highlights! This project is a fork of the official Dracula theme, with added PCM support. The icon used in this package is a modified version of an icon that uses the CC-BY-3.0 license. That license can be found here: https://creativecommons.org/licenses/by/3.0/ The original work can be found here: https://game-icons.net/1x1/delapouite/vampire-dracula.html",
+            "identifier": "com.github.2231puppy.kicad-vampire",
+            "license": "MIT",
+            "name": "Vampire",
+            "resources": {
+                "homepage": "https://github.com/2231puppy/kicad-vampire"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "8f6ebfa20b7366eba46d751dbd696ddd394aa40be654e5e849ff9b5d04844767",
+                    "download_size": 7088,
+                    "download_url": "https://github.com/2231puppy/kicad-vampire/releases/download/0.1/kicad-vampire.zip",
+                    "install_size": 15093,
+                    "kicad_version": "7.0",
+                    "status": "testing",
+                    "version": "0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/joelsa"
+                },
+                "name": "Joel Schulz-Andres"
+            },
+            "description": "A plugin to toggle visibility of all reference designators",
+            "description_full": "This plugin allows to hide all reference designators in a Layout file at the click of a single button, if all references are hidden, all will be shown",
+            "identifier": "com.github.joelsa.kicad-hide-references-plugin",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/joelsa/kicad-hide-references-plugin"
+                },
+                "name": "Joel Schulz-Andres"
+            },
+            "name": "Hide References",
+            "resources": {
+                "homepage": "https://github.com/joelsa/kicad-hide-references-plugin"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "999c580cdd339c1becb1b64b6522b4b910be5ce10c54be59673d0522e33b8edd",
+                    "download_size": 6407,
+                    "download_url": "https://github.com/joelsa/kicad-hide-references-plugin/releases/download/v1.0/hide_references.zip",
+                    "install_size": 6126,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/Sajitha-Aldeniya"
+                },
+                "name": "Sajitha Aldeniya"
+            },
+            "description": "Save circuits as blocks and reuse them later in different projects or in the same project. ",
+            "description_full": "A plug-in can be used to save circuits as blocks. Then these circuit blocks can be reused in different projects. This plug-in aims to reduce schematic drawing time significantly. \nTo create a schematic block, first, select the circuit and copy it to the clipboard (Ctrl+C). Then open up the plug-in and give it a name by writing it in the text field at the top. Click the \u201cSave Block\u201d Button to save it in the working directory. If you want to change the working directory, you can click the \u201cChange Working Directory\u201d button. All the blocks are saved in the working directory. Also, all the blocks in that directory will be listed in the List box. \nTo import a Schematic Block to the project, first, select the Block in the plugin and click \u201cImport Selected Block to Clipboard\u201d. Go to the schematic and paste it on the sheet. ",
+            "identifier": "com.github.Sajitha-Aldeniya.KiCAD-Schematic-Blocks-Plugin",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/Sajitha-Aldeniya/KiCAD-Schematic-Blocks-Plugin"
+                },
+                "name": "Sajitha Aldeniya"
+            },
+            "name": "Schematic Blocks Plug-In",
+            "resources": {
+                "homepage": "https://github.com/Sajitha-Aldeniya/KiCAD-Schematic-Blocks-Plugin"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "fcff8020f497017db902540e9776949379cc96c30ff265f06ab83219735134ef",
+                    "download_size": 8270,
+                    "download_url": "https://github.com/Sajitha-Aldeniya/KiCAD-Schematic-Blocks-Plugin/releases/download/v0.1/Schematic_Block_Plugin_v0.1.zip",
+                    "install_size": 19326,
+                    "kicad_version": "6",
+                    "status": "testing",
+                    "version": "0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "gaurav@gauravmanek.com",
+                    "web": "https://gauravmanek.com/"
+                },
+                "name": "Gaurav Manek"
+            },
+            "description": "Place keys according to a KLE specificaiton",
+            "description_full": "Places footprints according to a keyboard-layout-editor.com specification. Only moves keys that are not at a valid position, so swapping keys is simple!",
+            "identifier": "com.github.gauravmm.kleplacement",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "email": "gaurav@gauravmanek.com",
+                    "web": "https://gauravmanek.com/"
+                },
+                "name": "Gaurav Manek"
+            },
+            "name": "KLEPlacement",
+            "resources": {
+                "homepage": "https://github.com/gauravmm/KLEPlacement"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "41bc9614738721739459401a2822ce68f17ae0e6258ce0e745ded6eea7bd1793",
+                    "download_size": 10044,
+                    "download_url": "https://github.com/gauravmm/KLEPlacement/releases/download/1.0.1/package.zip",
+                    "install_size": 19494,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "gaurav@gauravmanek.com",
+                    "web": "https://gauravmanek.com/"
+                },
+                "name": "Gaurav Manek"
+            },
+            "description": "Enforce sub-PCB layouts for sub-schematics",
+            "description_full": "Define a sub-PCB next to your sub-schematic file, and HierarchicalPCB will propagate that layout to the final PCB. Organize your PCB layouts for maximum reusability!",
+            "identifier": "com.github.gauravmm.hierarchicalpcb",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "email": "gaurav@gauravmanek.com",
+                    "web": "https://gauravmanek.com/"
+                },
+                "name": "Gaurav Manek"
+            },
+            "name": "HierarchicalPCB",
+            "resources": {
+                "homepage": "https://github.com/gauravmm/HierarchicalPcb"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "8186cf0502f9f6c9d982144302d336e891adeb49f6928526d6e5036a0044001d",
+                    "download_size": 25154,
+                    "download_url": "https://github.com/gauravmm/HierarchicalPcb/releases/download/1.0.0/package.zip",
+                    "install_size": 52023,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.0.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/sparkfun",
+                    "twitter": "https://twitter.com/sparkfun",
+                    "web": "https://sparkfun.com"
+                },
+                "name": "SparkFun"
+            },
+            "description": "SparkFun's simple PCB panelizer for KiCad 7 / 8",
+            "description_full": "Converts a single PCB into a panel of multiple PCBs with v-scores in between",
+            "identifier": "com.github.sparkfun.SparkFunKiCadPanelizer",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/sparkfun",
+                    "twitter": "https://twitter.com/sparkfun",
+                    "web": "https://sparkfun.com"
+                },
+                "name": "SparkFun"
+            },
+            "name": "SparkFun KiCad Panelizer",
+            "resources": {
+                "homepage": "https://github.com/sparkfun/SparkFun_KiCad_Panelizer"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "b7583175bace2fc6e457b40085f9996e4a19288e3878675c44fc66d1ed9ea07a",
+                    "download_size": 25507,
+                    "download_url": "https://github.com/sparkfun/SparkFun_KiCad_Panelizer/releases/download/v1.2.0/SparkFunKiCadPanelizer-1.2.0-pcm.zip",
+                    "install_size": 102861,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.2.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/Sajitha-Aldeniya"
+                },
+                "name": "Sajitha Aldeniya"
+            },
+            "description": "User-friendly library package for beginners",
+            "description_full": "Simple Libraries library pack is a collection of common electronic components libraries for the free and open-source KiCAD PCB design software. The goal of Simple Libraries is to provide a user-friendly library package  for beginners. Components like resistors and capacitors are name base on the values like 10k,100ohm, 22uF\u2026 So users can directly search for the value and directly add it to their design. ",
+            "identifier": "com.github.Sajitha-Aldeniya.KiCad-Simple-Libraries",
+            "license": "CC-BY-SA-4.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/Sajitha-Aldeniya/KiCad-Simple-Libraries"
+                },
+                "name": "Sajitha Aldeniya"
+            },
+            "name": "Simple Libraries",
+            "resources": {
+                "GitHub": "https://github.com/Sajitha-Aldeniya/KiCad-Simple-Libraries"
+            },
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "ce506a2c13bd9284470fb76d9399f40f06e4d942ff38812c0f108234056602f8",
+                    "download_size": 32873247,
+                    "download_url": "https://github.com/Sajitha-Aldeniya/KiCad-Simple-Libraries/releases/download/v0.5/KiCad_Simple_Libraries_v0.5.zip",
+                    "install_size": 168306828,
+                    "kicad_version": "7",
+                    "status": "development",
+                    "version": "0.5"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/Steffen-W"
+                },
+                "name": "Steffen Wittemeier"
+            },
+            "description": "Plugin to analyze the wires in the PCB editor.",
+            "description_full": "Plugin to analyze the wires in the PCB editor. To use the plugin, two points must be marked on the board. This is best two pads that are connected with a wire. The tool then determines the DC resistance between the two points. A parasitic inductance wired also estimated. In future versions, the parasitic capacitance to the ground plane will be determined.",
+            "identifier": "com.github.Steffen-W.KiCad-Parasitics",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/Steffen-W"
+                },
+                "name": "Steffen Wittemeier"
+            },
+            "name": "Parasitics",
+            "resources": {
+                "homepage": "https://github.com/Steffen-W/KiCad-Parasitics"
+            },
+            "tags": [
+                "postlayoutsimulation",
+                "inductor",
+                "resistor",
+                "capacitor"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "f34b73264e6fb272c8633554b906a0a8d9cdf7ccc1f46bcadba86a6fba8b0c84",
+                    "download_size": 22933,
+                    "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.10.27/KiCad-Parasitics.zip",
+                    "install_size": 66884,
+                    "kicad_version": "7.00",
+                    "status": "stable",
+                    "version": "2023.10.27"
+                },
+                {
+                    "download_sha256": "c69fc13633bc22587fa8848c832e60fc653b193c161d2df1ceb4fe38bbcd3838",
+                    "download_size": 22604,
+                    "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.10.11/KiCad-Parasitics.zip",
+                    "install_size": 67026,
+                    "kicad_version": "7.00",
+                    "status": "stable",
+                    "version": "2023.10.11"
+                },
+                {
+                    "download_sha256": "3b9060b3bddddd4d25849bf57cfeb86a5d1c41badd793e5e0c08617a3fd4e68f",
+                    "download_size": 22257,
+                    "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.09.29/KiCad-Parasitics.zip",
+                    "install_size": 65128,
+                    "kicad_version": "7.00",
+                    "status": "stable",
+                    "version": "2023.09.29"
+                },
+                {
+                    "download_sha256": "a1e147532caf614aeec4c93466ced794c2dfef9f75dc058fb77d12b7a5835e6b",
+                    "download_size": 46452,
+                    "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.09.27/KiCad-Parasitics.zip",
+                    "install_size": 115988,
+                    "kicad_version": "7.00",
+                    "status": "stable",
+                    "version": "2023.09.27"
+                },
+                {
+                    "download_sha256": "523d77af16ef5fe976daf4bb9fc61fcf2a3d3782e65dd6c0c4f5d33bdac26842",
+                    "download_size": 122426,
+                    "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.09.20/KiCad-Parasitics.zip",
+                    "install_size": 613633,
+                    "kicad_version": "7.00",
+                    "status": "stable",
+                    "version": "2023.09.20"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://www.pcbway.com"
+                },
+                "name": "PCBWay.com"
+            },
+            "description": "Export production files (gerber file, bom file, pnp file) with one click.",
+            "description_full": "Toolkit for automating PCB fabrication process with KiCad and PCBWay.\n    Export the following production files to your local device with just one click:\n    1. Gerber files in correct format for production.\n    2. IPC-Netlist file.\n    3.Bom-file that includes all information of components.\n    4.Pick and Place-file used in assembly.\n    \n    About PCBWay:\n    \n    PCBWay is a Chinese company specializing in PCB prototyping and assembly, devotes to offer one-stop service. The build-time for standard PCB is 24hrs. Our upgraded material with TG150-160 costs as low as $5/10pcs while our remarkable after-sale services are standing by for any questions you may encounter.\n    As a sponsor of KiCad, we will always support its development.",
+            "identifier": "com.github.pcbway.PCBWay-Fabrication-Toolkit-for-KiCad",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://www.pcbway.com"
+                },
+                "name": "PCBWay.com"
+            },
+            "name": "PCBWay Fabrication Toolkit",
+            "resources": {
+                "homepage": "https://github.com/pcbway/PCBWay-Fabrication-Toolkit-for-KiCad"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "9ef8c2222b130e4422758080bd591a1d3055fdb2576e808846befa1bbe47b5ce",
+                    "download_size": 12994,
+                    "download_url": "https://github.com/pcbway/PCBWay-Fabrication-Toolkit-for-KiCad/releases/download/v0.1.1/PCBWayFabricationToolkitForKiCad.zip",
+                    "install_size": 21438,
+                    "kicad_version": "6.00",
+                    "status": "testing",
+                    "version": "0.1.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://jaseg.de/"
+                },
+                "name": "jaseg"
+            },
+            "description": "A security mesh generator for KiCad",
+            "description_full": "KiMesh automatically generates security meshes for you. A security mesh is a set of PCB traces that cover an area to detect physical tampering. KiMesh can cover arbitrary areas with two or more traces. Note: The KiMesh footprints Add-On must be installed alongside KiMesh. For detailed usage instructions, please have a look at the KiMesh website linked in the add-on information.",
+            "identifier": "de.jaseg.kimesh.plugin",
+            "license": "GPL-3.0",
+            "name": "KiMesh",
+            "resources": {
+                "git": "https://git.jaseg.de/kimesh.git",
+                "homepage": "https://jaseg.de/projects/kimesh",
+                "issues": "https://github.com/jaseg/kimesh/issues"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "25b2cc22a77ae145f3cfda263b09a1fd23fa26fddc05f023b02cddfb4b0939fe",
+                    "download_size": 13439,
+                    "download_url": "https://git.jaseg.de/kimesh.git/plain/de.jaseg.kimesh.plugin-v1.1.0.zip?h=v1.1.0",
+                    "install_size": 48310,
+                    "kicad_version": "7.99",
+                    "status": "stable",
+                    "version": "1.1.0"
+                },
+                {
+                    "download_sha256": "5367448e63cd824a60f47d85fdd379e7072eaceab6e93d2a2af3791a4b54aa25",
+                    "download_size": 12911,
+                    "download_url": "https://git.jaseg.de/kimesh.git/plain/de.jaseg.kimesh.plugin-v1.0.1.zip?h=v1.0.1",
+                    "install_size": 45187,
+                    "kicad_version": "7.99",
+                    "status": "stable",
+                    "version": "1.0.1"
+                },
+                {
+                    "download_sha256": "59da3a8a13be001fb6f5eee9e1d346f4beee6c0d736856b2da205db290ad21a6",
+                    "download_size": 12895,
+                    "download_url": "https://git.jaseg.de/kimesh.git/plain/de.jaseg.kimesh.plugin-v1.0.0.zip?h=v1.0.0",
+                    "install_size": 45166,
+                    "kicad_version": "7.99",
+                    "status": "stable",
+                    "version": "1.0.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://jaseg.de/"
+                },
+                "name": "jaseg"
+            },
+            "description": "A security mesh generator for KiCad",
+            "description_full": "This is the footprint package for the KiMesh security mesh generator.",
+            "identifier": "de.jaseg.kimesh.footprints",
+            "license": "CERN-OHL",
+            "name": "KiMesh",
+            "resources": {
+                "git": "https://git.jaseg.de/kimesh.git",
+                "homepage": "https://jaseg.de/projects/kimesh",
+                "issues": "https://github.com/jaseg/kimesh/issues"
+            },
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "ce2c4849fafc3b3aa0ce7c2c9c5a7256181f5e24a59cb5b901da06a8ffb9e0a7",
+                    "download_size": 912925,
+                    "download_url": "https://git.jaseg.de/kimesh.git/plain/de.jaseg.kimesh.footprints-v1.1.0.zip?h=v1.1.0",
+                    "install_size": 5091564,
+                    "kicad_version": "7.99",
+                    "status": "stable",
+                    "version": "1.1.0"
+                },
+                {
+                    "download_sha256": "00bc9b6e264ee4f72324909e40dbc2d7d2ec6e91d150639d52492fe305c17620",
+                    "download_size": 822997,
+                    "download_url": "https://git.jaseg.de/kimesh.git/plain/de.jaseg.kimesh.footprints-v1.0.1.zip?h=v1.0.1",
+                    "install_size": 4803868,
+                    "kicad_version": "7.99",
+                    "status": "stable",
+                    "version": "1.0.1"
+                },
+                {
+                    "download_sha256": "e0c1a2752090def465afa6f6c38baeb74a6544e79e87de3019087c41a3f2790e",
+                    "download_size": 822342,
+                    "download_url": "https://git.jaseg.de/kimesh.git/plain/de.jaseg.kimesh.footprints-v1.0.0.zip?h=v1.0.0",
+                    "install_size": 4803868,
+                    "kicad_version": "7.99",
+                    "status": "stable",
+                    "version": "1.0.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/DIaLOGIKa-GmbH"
+                },
+                "name": "Tim Goll, DIaLOGIKa"
+            },
+            "description": "Generates PCB coils for KiCad",
+            "description_full": "Toolkit for generating PCB coils from within KiCad and using them as footprints.\n\nAll parameters can be set from within a UI that can be found in the action toolbar.",
+            "identifier": "com.github.DIaLOGIKa-GmbH.kicad-coil-creator",
+            "license": "GPL-3.0",
+            "name": "PCB Coil Generator",
+            "resources": {
+                "homepage": "https://github.com/DIaLOGIKa-GmbH/kicad-coil-creator"
+            },
+            "tags": [
+                "coils",
+                "inductors",
+                "toolkit"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "8b40bafa272671d433dcb56f2e96107f0afc0acd622089e24195389422837b90",
+                    "download_size": 17346,
+                    "download_url": "https://github.com/DIaLOGIKa-GmbH/kicad-coil-creator/releases/download/v1.0.0/coil_generator_v1.0.0.zip",
+                    "install_size": 38033,
+                    "kicad_version": "7.00",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.0.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/sparkfun",
+                    "twitter": "https://twitter.com/sparkfun",
+                    "web": "https://sparkfun.com"
+                },
+                "name": "SparkFun"
+            },
+            "description": "SparkFun's simple PCB CAMmer (Gerber generator) for KiCad 7 / 8",
+            "description_full": "Generates the Gerber and drill files for a KiCad PCB and zips them",
+            "identifier": "com.github.sparkfun.SparkFunKiCadCAMmer",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/sparkfun",
+                    "twitter": "https://twitter.com/sparkfun",
+                    "web": "https://sparkfun.com"
+                },
+                "name": "SparkFun"
+            },
+            "name": "SparkFun KiCad CAMmer",
+            "resources": {
+                "homepage": "https://github.com/sparkfun/SparkFun_KiCad_CAMmer"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "52ed5712a9639741d84bac7850f78de929bd594ac364a58412eae2ff707ae833",
+                    "download_size": 15411,
+                    "download_url": "https://github.com/sparkfun/SparkFun_KiCad_CAMmer/releases/download/v1.1.0/SparkFunKiCadCAMmer-1.1.0-pcm.zip",
+                    "install_size": 41588,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/lethalbit",
+                    "mastodon": "https://chaos.social/@lethalbit",
+                    "website": "https://lethalbit.net"
+                },
+                "name": "Aki Van Ness"
+            },
+            "description": "A dark and vibrant color scheme by @lethalbit",
+            "description_full": "A dark and vibrant color scheme by @lethalbit",
+            "identifier": "net.lethalbit.arcana",
+            "license": "CC-BY-NC-SA-4.0",
+            "maintainer": {
+                "contact": {
+                    "github": "https://github.com/lethalbit",
+                    "mastodon": "https://chaos.social/@lethalbit",
+                    "website": "https://lethalbit.net"
+                },
+                "name": "Aki Van Ness"
+            },
+            "name": "Arcana",
+            "resources": {
+                "github": "https://github.com/lethalbit/arcana-kicad"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "1a1b0030cc8f5b60d2b8a680d9dbc34b0ea697f12eed47744c93956f70a047fb",
+                    "download_size": 13283,
+                    "download_url": "https://github.com/lethalbit/arcana-kicad/releases/download/2024.02.25/kicad-arcana.zip",
+                    "install_size": 20337,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "2024.02.25"
+                },
+                {
+                    "download_sha256": "a1192841d2a273df686bf97bcea5fff38f1ee7eaa84269403d42b124b8caaa05",
+                    "download_size": 13029,
+                    "download_url": "https://github.com/lethalbit/arcana-kicad/releases/download/2023.11.21/kicad-arcana.zip",
+                    "install_size": 20206,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "2023.11.21"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "jzzhuang666@gmail.com"
+                },
+                "name": "NextPCB"
+            },
+            "description": "Start prototype and assembly by sending files to NextPCB with just one click\nAutomatic extract key parameters from pcbnew and get real-time quotation within KiCad",
+            "description_full": "Click this plugin for high quality prototyping and assembly services, NextPCB will commit to meeting your needs to the greatest extent.\n\nWhen you click NextPCB Plug-in button, we will export these files in your project:\n\n1. Gerber files in correct format for production\n2. IPC-Netlist file\n3. Bom-file that includes all information of components (please note designator, quantity, MPN/part number, package/footprint are necessary)\n4. Pick and Place-file used in assembly\n\nYou can click \"Save to Cart\" to place an order immediately after uploading the files ( usually only takes a few seconds), our engineers will double check the files before the production.\n\nAbout NextPCB:\n\nNextPCB is a Chinese company specializing in PCB prototyping and assembly, devotes to offer one-stop service. The build-time for standard PCBs is 24hrs. Our upgraded material with TG150-160 costs as low as $5/10pcs while our remarkable after-sale services are standing by for any questions you may encounter. As a sponsor of KiCad, we will always support its development.",
+            "identifier": "com.github.SYSUeric66.kicad-amf-plugin",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "email": "jzzhuang666@gmail.com"
+                },
+                "name": "NextPCB"
+            },
+            "name": "HQPCB / HQ NextPCB Quote & Order",
+            "resources": {
+                "Github": "https://github.com/SYSUeric66/kicad-amf-plugin"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "b7fe8f330bb0c668241e147b42f5d1e0c1f48ea4898c6d0d901286acc576bf74",
+                    "download_size": 109810,
+                    "download_url": "https://gitee.com/HQNEXTPCB/hq-kicad-plugin-release/raw/master/KiCAD-PCM-1.1.0.zip",
+                    "install_size": 791357,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://kazarians.dev"
+                },
+                "name": "SK Electronics Consulting"
+            },
+            "description": "Gereates various types of PCB trace inductors",
+            "description_full": "A collection of footprint wizards to generate PCB trace inductors.",
+            "identifier": "com.github.SK-Electronics-Consulting.kicad-coil-generators",
+            "license": "GPL-3.0",
+            "name": "KiCAD Coil Generator",
+            "resources": {
+                "homepage": "https://github.com/SK-Electronics-Consulting/kicad-coil-generators"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "952535bef57e34d3d395e51f5764c5441abfb436236aac3d1c61cc6a92575b4d",
+                    "download_size": 13905,
+                    "download_url": "https://github.com/SK-Electronics-Consulting/kicad-coil-generators/releases/download/v1.1.0/kicad-coil-generator-v1_1_0.zip",
+                    "install_size": 47181,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://adamws.github.io"
+                },
+                "name": "adamws"
+            },
+            "description": "KiCad plugin for git",
+            "description_full": "Git actions directly from KiCad's PCB editor window",
+            "identifier": "com.github.adamws.kicad-git",
+            "license": "GPL-3.0",
+            "name": "Git plugin",
+            "resources": {
+                "Bug Tracker": "https://github.com/adamws/kicad-git/issues",
+                "Homepage": "https://github.com/adamws/kicad-git",
+                "Sponsor": "https://ko-fi.com/adamws"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "f0ac36a2cfef71f0f5756ae74011a4bc7e849fcb7f59f75172036ff93b1bc101",
+                    "download_size": 8605,
+                    "download_url": "https://github.com/adamws/kicad-git/releases/download/v0.2/kicad_git-0.2.zip",
+                    "install_size": 7797,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "0.2"
+                },
+                {
+                    "download_sha256": "a5e3135204c562e216cfce92cd13714a89287c5a63cc5a6f24835ceef6484061",
+                    "download_size": 16807,
+                    "download_url": "https://github.com/adamws/kicad-git/releases/download/v0.1/kicad_git-0.1.zip",
+                    "install_size": 15885,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "email": "john.hryb.4.1@gmail.com"
+                },
+                "name": "John Hryb"
+            },
+            "description": "Replaces selected via(s) with identical footprint to make thermal relief for soldering.",
+            "description_full": "This is for DIY circuit boards with vias in copper pour that need to be soldered to. Use this along with the \"Do not tent vias\" option. I'm soldering a wire from the top to bottom via pad but you can use this to solder eyelets too. The original via is deleted to eliminate repeated drill hits.",
+            "identifier": "com.github.JohnHryb.ThermalReliefVia",
+            "license": "GPL-2.0",
+            "name": "Thermal Relief Via",
+            "resources": {
+                "homepage": "https://github.com/Hrybmo/ThermalReliefVia"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "22b4c477dfe68524d74923a4268586b43449a938d2cda5e306d808e0f594e015",
+                    "download_size": 16868,
+                    "download_url": "https://github.com/Hrybmo/ThermalReliefVia/raw/v0.1.3/Archive/ThermalReliefVia_0.1.3.zip",
+                    "install_size": 17639,
+                    "kicad_version": "7.0",
+                    "status": "testing",
+                    "version": "0.1.3"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "discord": "30350n",
+                    "github": "https://github.com/30350n",
+                    "web": "https://30350n.de/"
+                },
+                "name": "Bobbe"
+            },
+            "description": "Export PCB 3D Models from Pcbnew to Blender",
+            "description_full": "The pcb2blender workflow lets you create professionally looking product renders of all your KiCad projects in minutes! Simply export your board as a .pcb3d file in KiCad, import it into Blender and start creating!\n(Note for Linux/macOS users: If you run into any issues, make sure you're running python 3.10).\nIf you want to support this project, you can do so at https://github.com/sponsors/30350n",
+            "identifier": "com.github.30350n.pcb2blender",
+            "license": "GPL-3.0",
+            "maintainer": {
+                "contact": {
+                    "discord": "30350n",
+                    "github": "https://github.com/30350n",
+                    "web": "https://30350n.de/"
+                },
+                "name": "Bobbe"
+            },
+            "name": "pcb2blender",
+            "resources": {
+                "homepage": "https://github.com/30350n/pcb2blender"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "04de7595987df8e08a967e595effc8f912511023074f5df493937c58aac4d862",
+                    "download_size": 16389,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.10-k8.0-b4.1/pcb2blender_exporter_2-10.zip",
+                    "install_size": 28145,
+                    "kicad_version": "8.0",
+                    "status": "stable",
+                    "version": "2.10"
+                },
+                {
+                    "download_sha256": "58bd89250c49b3d95c112a68de14a773bfc9148ce72af72f5fe47757009e0d78",
+                    "download_size": 16387,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.9-k7.0-b4.0/pcb2blender_exporter_2-9.zip",
+                    "install_size": 28143,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "2.9"
+                },
+                {
+                    "download_sha256": "e00c98bd55d18aade003dd9405a1b75291866867cdb9b71854e49e696c3c8989",
+                    "download_size": 16311,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.8-k7.0-b4.0/pcb2blender_exporter_2-8.zip",
+                    "install_size": 27910,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "2.8"
+                },
+                {
+                    "download_sha256": "c4d8cd3528d5c38b5c071d4a3a8961e9d4aa09757173f7d9825995eefe46c453",
+                    "download_size": 16246,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.7-k7.0-b3.6/pcb2blender_exporter_2-7.zip",
+                    "install_size": 27668,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "2.7"
+                },
+                {
+                    "download_sha256": "66186c4ee0970b991e52bd1cd6e98f1122a9e21b71aa72c0dac0201c78248ffe",
+                    "download_size": 15416,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.2-k7.0-b3.4/pcb2blender_exporter_2-2.zip",
+                    "install_size": 24763,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "2.2"
+                },
+                {
+                    "download_sha256": "70a0c924c2362e33d72fc6094d06946faa0b9999af11525c40c39f83c774d635",
+                    "download_size": 15429,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.1-k6.0-b3.4/pcb2blender_exporter_2-1.zip",
+                    "install_size": 24746,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "2.1"
+                },
+                {
+                    "download_sha256": "bdfb39c54ec056b3215d103d883d1d4590d96e0c8f7a841b2e9c25dc650cca02",
+                    "download_size": 15381,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v2.0-k6.0-b3.3/pcb2blender_exporter_2-0.zip",
+                    "install_size": 24579,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "2.0"
+                },
+                {
+                    "download_sha256": "50107e70d2e72f6d4d079e87ea7f78e7566dfb0e58caacbe432fa5d5f8b3ad6e",
+                    "download_size": 15081,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v1.7-k6.0-b3.2/pcb2blender_exporter_1-7.zip",
+                    "install_size": 23498,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.7"
+                },
+                {
+                    "download_sha256": "cb42107d3405fecfd50b85764ec3e6d12f95865a4ddb755149678b19f2e856e5",
+                    "download_size": 15008,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v1.4-k6.0-b3.2/pcb2blender_exporter_1-4.zip",
+                    "install_size": 23377,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.4"
+                },
+                {
+                    "download_sha256": "067212710f51462a9c5a5696dc0bf59b7cbb68f58f03b0beca3488e58a021c13",
+                    "download_size": 14920,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v1.3-k6.0-b3.2/pcb2blender_exporter_1-3.zip",
+                    "install_size": 23162,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.3"
+                },
+                {
+                    "download_sha256": "a8928d52b0f80f9ad147762c5febfe156358fd27f3b1760e96d3303b65c515fc",
+                    "download_size": 14921,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v1.2-k6.0-b3.1/pcb2blender_exporter_1-2.zip",
+                    "install_size": 23161,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.2"
+                },
+                {
+                    "download_sha256": "68430a1d9f23ee62f512efa51881ce3260467926e54d536c351791367603ad51",
+                    "download_size": 14933,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v1.1-k6.0-b3.1/pcb2blender_exporter_1-1.zip",
+                    "install_size": 23204,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.1"
+                },
+                {
+                    "download_sha256": "9673e2d3ed9e4e02490c4dbe9dc792dc921b92933d48fcd7227acf7af1826013",
+                    "download_size": 14917,
+                    "download_url": "https://github.com/30350n/pcb2blender/releases/download/v1.0-k6.0-b3.1/pcb2blender_exporter_1-0.zip",
+                    "install_size": 23173,
+                    "kicad_version": "6.0",
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/clovergit"
+                },
+                "name": "CloverGit"
+            },
+            "description": "A theme that is rich in technology, Inspired by Altium Circuit Studio",
+            "description_full": "Designed by @CloverGit, Inspired by Altium Circuit Studio.\n Read more at https://github.com/clovergit/kicad-theme-skyline",
+            "identifier": "com.github.clovergit.kicad-theme-skyline",
+            "license": "MIT",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/clovergit"
+                },
+                "name": "CloverGit"
+            },
+            "name": "Skyline",
+            "resources": {
+                "Github": "https://github.com/clovergit/kicad-theme-skyline"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "7525662df15bb60a26cacef26fe4effc6e7bd4ae18578cafd8fac0713c88db3d",
+                    "download_size": 10462,
+                    "download_url": "https://github.com/clovergit/kicad-theme-skyline/releases/download/v1.0.1/kicad-theme-skyline.zip",
+                    "install_size": 16183,
+                    "kicad_version": "7.0",
+                    "status": "stable",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/markh-de"
+                },
+                "name": "Mark H\u00e4mmerling"
+            },
+            "description": "PCB Assembly Variant Selection for KiCad",
+            "description_full": "This plugin provides multi-aspect PCB assembly variant selection.\nIt assigns component values and attributes (such as 'Do not populate') according to variation rules specified in footprint fields.\n\u2014 Key Concepts \u2014\n\u2022 Support for multiple independent variation aspects (i.e., dimensions, degrees of freedom) per design.\n\u2022 Variation rules are fully contained in native design files (no external configuration files) and portable (copying components to another design keeps their variation specification intact).\n\u2022 Seamless integration of the choice selection process, giving the impression of a native KiCad feature.\n\u2022 Component values and attributes are modified in place, enabling compatibility with all exporters that work on the actual component data.\n\u2014 Documentation and Demo Project \u2014\nThe variation rule syntax specification and rule examples can be found in the 'Documentation' resource link.\nA demo KiCad project is contained in the source code repository, which can be downloaded as an archive from the 'Source and Demo' resource link.\n\u2014 Support \u2014\nIf you find bugs or want to discuss ideas or questions, please follow the 'Issue Tracker' resource link.",
+            "identifier": "de.markh.kivar",
+            "license": "MIT",
+            "name": "KiVar",
+            "resources": {
+                "Documentation": "https://github.com/markh-de/KiVar/blob/main/README.md#usage",
+                "Issue Tracker": "https://github.com/markh-de/KiVar/issues",
+                "License": "https://raw.githubusercontent.com/markh-de/KiVar/main/LICENSE",
+                "Source and Demo": "https://github.com/markh-de/KiVar/archive/refs/heads/main.zip"
+            },
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "c718e43460a645ce4b6fd50f114d2e6db3b633af3a367f0d63f981cb813cbc13",
+                    "download_size": 13650,
+                    "download_url": "https://github.com/markh-de/KiVar/releases/download/v0.1.2/kivar-v0.1.2-pcm.zip",
+                    "install_size": 37409,
+                    "kicad_version": "7.0",
+                    "status": "testing",
+                    "version": "0.1.2"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "github": "https://github.com/MitjaNemec"
+                },
+                "name": "Mitja Nemec"
+            },
+            "description": "Swap stubs",
+            "description_full": "Swaps the ratsnest between two pins and also swaps the lables in the schematics to keep the schematis in sync",
+            "identifier": "com.github.MitjaNemec.SwapStubs",
+            "license": "GPL-2.0",
+            "name": "SwapStubs",
+            "resources": {
+                "homepage": "https://github.com/MitjaNemec/SwapStubs"
+            },
+            "tags": [
+                "pcbnew",
+                "swap"
+            ],
+            "type": "plugin",
+            "versions": [
+                {
+                    "download_sha256": "34aedc1bda6264de7bdf8dec10529cd63608c9d5e3b7114cf958e9f58c431895",
+                    "download_size": 19315,
+                    "download_url": "https://github.com/MitjaNemec/SwapStubs/releases/download/1.0.6/SwapStubs-1.0.6-pcm.zip",
+                    "install_size": 46662,
+                    "kicad_version": "8.0",
+                    "kicad_version_max": "8.1",
+                    "platforms": [
+                        "linux",
+                        "macos",
+                        "windows"
+                    ],
+                    "status": "stable",
+                    "version": "1.0.6"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/tormyvancool"
+                },
+                "name": "Tormy Van Cool"
+            },
+            "description": "Symbols collection similar to the one used by Nuova Elettronica",
+            "description_full": "Nuova Elettronica was a glorious italian magazine that promote electornics not only in italy but in all EU Countries. Indeed it was translated in several languages and distribute along the whole EU Territories.",
+            "identifier": "com.github.tormyvancool.NuovaElettronica",
+            "license": "CC0-1.0",
+            "name": "Nuova Elettronica Symbols Library",
+            "resources": {
+                "homepage": "https://github.com/tormyvancool/NuovaElettronica"
+            },
+            "type": "library",
+            "versions": [
+                {
+                    "download_sha256": "063e42f4c82545668049c9777cfc916375b9e9d0f1b69c4d75941c49ea8bf15b",
+                    "download_size": 2346943,
+                    "download_url": "https://github.com/tormyvancool/NuovaElettronica/raw/846b3562ebbab663f296c03eee6d23950c6b2745/NE-Nuova-Elettronica-library.zip",
+                    "install_size": 10099578,
+                    "kicad_version": "8.0",
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "author": {
+                "contact": {
+                    "web": "https://github.com/tormyvancool/"
+                },
+                "name": "Tormy Van Cool"
+            },
+            "description": "Theme with the colors of the italian former-magazine Nuova Elettronica",
+            "description_full": "Theme with the colors of the italian former-magazine Nuova Elettronica",
+            "identifier": "com.github.tormyvancool.NuovaElettronica.Theme",
+            "license": "CC0-1.0",
+            "maintainer": {
+                "contact": {
+                    "web": "https://github.com/tormyvancool/"
+                },
+                "name": "Tormy Van Cool"
+            },
+            "name": "Nuova Elettronica - Theme",
+            "resources": {
+                "Github": "https://github.com/tormyvancool/NuovaElettronica/tree/main/Theme"
+            },
+            "type": "colortheme",
+            "versions": [
+                {
+                    "download_sha256": "d0a2d5b242d7a1920ba65ae680ab2c05064b9534ee4325b6a9e331151a6dc043",
+                    "download_size": 7213,
+                    "download_url": "https://github.com/tormyvancool/NuovaElettronica/raw/bc399714c3fc2cade679f3b16de355764916c658/Theme/NE-Nuova-Elettronica-theme.zip",
+                    "install_size": 13919,
+                    "kicad_version": "8.0",
+                    "status": "stable",
+                    "version": "1.0"
+                }
+            ]
+        }
+    ]
+}
