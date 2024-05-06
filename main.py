@@ -1,8 +1,8 @@
 
 
-from kicad_add_on_crawler import KicadAddOnCrawler
+from kicad_adds_on_spider.crawler.worker import Worker
 
 
 if __name__ == '__main__':
-    crawler = KicadAddOnCrawler
+    crawler = Worker()
 

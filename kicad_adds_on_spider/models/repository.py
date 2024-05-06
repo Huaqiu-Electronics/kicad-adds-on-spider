@@ -1,0 +1,47 @@
+from pydantic import BaseModel
+
+{
+    "$schema": "https://gitlab.com/kicad/code/kicad/-/raw/master/kicad/pcm/schemas/pcm.v1.schema.json#/definitions/Repository",
+    "maintainer": {
+        "contact": {
+            "web": "https://www.kicad.org/about/contact-us/"
+        },
+        "name": "KiCad team"
+    },
+    "name": "KiCad official repository",
+    "packages": {
+        "sha256": "dfc34fa446b8926a94cd572abf694155af9064d99211e05f3d43c47a45b7f89b",
+        "update_time_utc": "2024-04-23 11:01:42",
+        "update_timestamp": 1713870102,
+        "url": "https://gitlab.com/kicad/addons/repository/-/raw/main/packages.json"
+    },
+    "resources": {
+        "sha256": "a197c8f9e67970a702fa56631580c31dbb244b51acada8f6ca5df1797b08dbfa",
+        "update_time_utc": "2024-04-23 11:01:42",
+        "update_timestamp": 1713870102,
+        "url": "https://gitlab.com/kicad/addons/repository/-/jobs/artifacts/main/raw/artifacts/resources.zip?job=update"
+    }
+}
+
+
+
+class Packages(BaseModel):
+    url: str
+    sha256: str
+    update_time_utc: str
+    update_timestamp: int
+
+
+class Resources(BaseModel):
+    url: str
+    sha256: str
+    update_time_utc: str
+    update_timestamp: int
+
+
+
+class Repository(BaseModel):
+    name: str
+    maintainer: dict
+    packages: Packages
+    resources: Resources
