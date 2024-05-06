@@ -1,5 +1,4 @@
 
-require('https').globalAgent.options.ca = require('ssl-root-cas').create();
 const https = require('https');
 const fs = require('fs');
 
