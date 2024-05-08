@@ -84,22 +84,12 @@ class Version(BaseModel):
     status: str
     version: str
 
-
-class Contact(BaseModel):
-    web: str
-
-class Author(BaseModel):
-    contact: Contact
-    name: str
-
-
 class Package(BaseModel):
-    author: Author
+    author: dict
     description: str
     description_full: str
     identifier: str
     license: str
-    maintainer: Author
     name: str
     resources: dict
     type: str
