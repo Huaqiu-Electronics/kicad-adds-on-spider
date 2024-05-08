@@ -1,2 +1,2 @@
 #! /bin/bash
-python ./main.py ~/adds-on
+nohup python ./main.py ~/kicad-adds-on &
