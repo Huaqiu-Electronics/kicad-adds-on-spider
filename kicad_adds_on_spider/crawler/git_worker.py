@@ -13,8 +13,10 @@ class GitWorker:
         self.messages.append(msg)
 
     def clone_git(self):
-        # clone git@gitee.com:kicad-mirror/kicad-addons.git to home dir
-        os.system(f"git clone git@gitee.com:kicad-mirror/kicad-addons.git {self._home_dir}")
+        if not os.path.exists(self._home_dir):
+            os.system(f"git clone git@gitee.com:kicad-mirror/kicad-addons.git {self._home_dir}")
+            os.system("git config --global user.email 'liangtie.qian@gmail.com'")
+            os.system("git config --global user.name 'liangtie.qian'")
 
     def pull_git(self):
         os.chdir(self._home_dir)

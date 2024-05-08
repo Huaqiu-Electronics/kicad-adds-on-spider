@@ -24,7 +24,6 @@ class Worker:
         self._packages = None
         self._git_worker = GitWorker(home_dir)
         self._git_worker.clone_git()
-        CrawlerUtils.create_directory_if_not_exists(home_dir)
 
 
     @property
