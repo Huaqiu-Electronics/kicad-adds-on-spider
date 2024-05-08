@@ -84,10 +84,26 @@ class Version(BaseModel):
     status: str
     version: str
 
-class Package(BaseModel):
-    versions: list[Version]
-    identifier: str
+
+class Contact(BaseModel):
+    web: str
+
+class Author(BaseModel):
+    contact: Contact
     name: str
+
+
+class Package(BaseModel):
+    author: Author
+    description: str
+    description_full: str
+    identifier: str
+    license: str
+    maintainer: Author
+    name: str
+    resources: dict
+    type: str
+    versions: list[Version]
 
 class Packages(BaseModel):
     packages : list[Package]
