@@ -71,6 +71,7 @@ class Worker:
         self._repository.packages.sha256 = KicadUtils.get_sha256(self.packages_fp)
 
     def _update_repository(self):
+        self._repository.name = "KiCad official repository mirror"
         with open(self.repository_fp, "w") as f:
             f.write(self._repository.model_dump_json())
             f.close()
