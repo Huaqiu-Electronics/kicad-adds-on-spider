@@ -1,10 +1,12 @@
 from kicad_adds_on_spider.crawler.crawler_utils import CrawlerUtils
+from kicad_adds_on_spider.crawler.git_worker import GitWorker
 from kicad_adds_on_spider.crawler.kicad_utils import KicadUtils
 from kicad_adds_on_spider.models.packages import Package ,Packages, Version
 from kicad_adds_on_spider.models.repository import Repository
 import json
 import time
 import os
+
 
 KICAD_OFFICIAL_REPOSITORY_URL = "https://repository.kicad.org/repository.json"
 
@@ -15,12 +17,15 @@ DEFAULT_REFRESH_INTERVAL = 60 * 60 * 24 * 2
 
 class Worker:
     def __init__(self  ,  home_dir :str , url_prefix : str = ASSET_HTTPS_DOWNLOAD_PREFIX, refresh_interval : int = DEFAULT_REFRESH_INTERVAL ):
-        CrawlerUtils.create_directory_if_not_exists(home_dir)
         self._url_prefix = url_prefix
         self._home_dir = home_dir
         self._refresh_interval = refresh_interval
         self._repository = None
         self._packages = None
+        self._git_worker = GitWorker(home_dir)
+        self._git_worker.clone_git()
+        CrawlerUtils.create_directory_if_not_exists(home_dir)
+
 
     @property
     def resource_fp(self):
@@ -71,38 +76,34 @@ class Worker:
             f.close()
 
     def _update_libraries(self):
-        for pkg in self._packages.packages:
-            print("Begin update library for " + pkg.name)
-            for version in pkg.versions:
-                print("Begin update library for " + pkg.name + " version " + version.version )
 
+        total_lib_cnt = 0
+        failed_lib_cnt = 0
+
+        for pkg in self._packages.packages:
+            for version in pkg.versions:
+                total_lib_cnt += 1
                 try:
                     CrawlerUtils.download_content_and_save(version.download_url, self.get_library_save_path(pkg, version))
                     version.download_url = self.get_library_download_url(pkg, version)
 
                 except :
-                    print("Download library for " + pkg.name + " version " + version.version + " failed")
+                    self._git_worker.add_mgs("Download adds-on for " + pkg.name + " version " + version.version + " failed")
+                    failed_lib_cnt += 1
+
+        self._git_worker.add_mgs("Total adds-on count: " + str(total_lib_cnt) + " failed count: " + str(failed_lib_cnt))
 
     def run(self):
         while True:
+            print("Begin update")
+            self._git_worker.pull_git()
             self._repository = Repository(**json.loads(CrawlerUtils.download_content_string(KICAD_OFFICIAL_REPOSITORY_URL)))
             self._packages = Packages(**json.loads(CrawlerUtils.download_content_string(self._repository.packages.url)))
-
-            print("Begin update libraries")
             self._update_libraries()
-            print("End update libraries")
-
-            print("Begin update resources")
             self._update_resource()
-            print("End update resources")
-
-            print("Begin update packages")
             self._update_packages()
-            print("End update packages")
-
-            print("Begin update repository")
             self._update_repository()
-            print("End update repository")
-
+            self._git_worker.commit()
+            print("Update finished")
             time.sleep(self._refresh_interval)
 
