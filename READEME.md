@@ -15,3 +15,7 @@ https://gitlab.com/kicad/addons/repository/-/jobs/artifacts/main/raw/artifacts/r
 ## Mirror repository cnf link
 
 https://gitee.com/kicad-mirror/kicad-addons/raw/master/repository.json
+
+## Run
+
+python main.py D:/kicad-addons
