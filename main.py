@@ -4,5 +4,6 @@ from kicad_adds_on_spider.crawler.worker import Worker
 
 
 if __name__ == '__main__':
-    crawler = Worker()
+    crawler = Worker("D:/kicad_adds_on")
+    crawler.run()
 

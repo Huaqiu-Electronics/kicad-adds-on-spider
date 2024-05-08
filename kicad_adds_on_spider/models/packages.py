@@ -89,4 +89,7 @@ class Package(BaseModel):
     identifier: str
     name: str
 
+class Packages(BaseModel):
+    packages : list[Package]
+
 

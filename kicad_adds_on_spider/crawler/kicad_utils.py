@@ -1,3 +1,4 @@
+import hashlib
 from kicad_adds_on_spider.models.packages import Package, Version
 
 
@@ -9,9 +10,12 @@ class KicadUtils:
         return f"{url_prefix}/{KicadUtils.format_zip_name(pkg, version)}"
 
     def get_sha256(file_path):
-        import hashlib
+        sha256_hash = hashlib.sha256()
         with open(file_path, "rb") as f:
-            return hashlib.sha256(f.read()).hexdigest()
+            # Read and update hash string value in blocks of 4K
+            for byte_block in iter(lambda: f.read(4096), b""):
+                sha256_hash.update(byte_block)
+        return sha256_hash.hexdigest()
 
     def get_update_time_utc():
         import datetime

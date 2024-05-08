@@ -1,5 +1,5 @@
 import requests
-
+import os
 class CrawlerUtils:
 
     def save_content_to_file(content, file_path):
@@ -30,3 +30,13 @@ class CrawlerUtils:
             return content.decode('utf-8')
 
         return None
+
+    def create_directory_if_not_exists(path):
+        if not os.path.exists(path):
+            try:
+                os.makedirs(path)
+                print("Directory created successfully:", path)
+            except OSError as e:
+                print("Error:", e)
+        else:
+            print("Directory already exists:", path)
