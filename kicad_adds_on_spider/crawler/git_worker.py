@@ -34,5 +34,17 @@ class GitWorker:
         os.system(f'git commit -m "{msg}"')
         os.system("git push")
 
+    def log_error(self, msg):
+        try:
+            # Create a log file of current date time and write the msg to it
+            log_file = os.path.join(self._home_dir, f"{self.current_time_str()}.log")
+            with open(log_file, "w") as f:
+                f.write(msg)
+            self.add_mgs(msg)
+            self.commit()
+        except Exception as e:
+            print(f"Error while logging error: {e}")
+            print("The previous error is : " + self.current_time_str() + ":"+  msg)        
+
 
 

@@ -12,8 +12,9 @@ KICAD_OFFICIAL_REPOSITORY_URL = "https://repository.kicad.org/repository.json"
 
 ASSET_HTTPS_DOWNLOAD_PREFIX = "https://gitee.com/kicad-mirror/kicad-addons/raw/master/"
 
-DEFAULT_REFRESH_INTERVAL = 60 * 60 * 24 * 2
+DEFAULT_REFRESH_INTERVAL = 60 * 60 * 24 * 1
 
+DEFAULT_RETRY_INTERVAL  = 60* 10
 
 class Worker:
     def __init__(self  ,  home_dir :str , url_prefix : str = ASSET_HTTPS_DOWNLOAD_PREFIX, refresh_interval : int = DEFAULT_REFRESH_INTERVAL ):
@@ -91,19 +92,28 @@ class Worker:
                     self._git_worker.add_mgs("Download adds-on for " + pkg.name + " version " + version.version + " failed")
                     failed_lib_cnt += 1
 
-        self._git_worker.add_mgs("Total adds-on count: " + str(total_lib_cnt) + " failed count: " + str(failed_lib_cnt))
+        self._git_worker.add_mgs("Total adds-on count: " + str(total_lib_cnt)+ " success count: " + str(total_lib_cnt - failed_lib_cnt) + " failed count: " + str(failed_lib_cnt))
+
+    def _do_update(self):
+        while True:
+            try:
+                self._git_worker.pull_git()
+                self._repository = Repository(**json.loads(CrawlerUtils.download_content_string(KICAD_OFFICIAL_REPOSITORY_URL)))
+                self._packages = Packages(**json.loads(CrawlerUtils.download_content_string(self._repository.packages.url)))
+                self._update_libraries()
+                self._update_resource()
+                self._update_packages()
+                self._update_repository()
+                self._git_worker.commit()
+                return 
+            except Exception as e:
+                self._git_worker.log_error(str(e))
+                time.sleep(DEFAULT_RETRY_INTERVAL)
 
     def run(self):
         while True:
-            print("Begin update")
-            self._git_worker.pull_git()
-            self._repository = Repository(**json.loads(CrawlerUtils.download_content_string(KICAD_OFFICIAL_REPOSITORY_URL)))
-            self._packages = Packages(**json.loads(CrawlerUtils.download_content_string(self._repository.packages.url)))
-            self._update_libraries()
-            self._update_resource()
-            self._update_packages()
-            self._update_repository()
-            self._git_worker.commit()
-            print("Update finished")
-            time.sleep(self._refresh_interval)
-
+            try:
+                self._do_update()
+                time.sleep(self._refresh_interval)                
+            except Exception as e:
+                self._git_worker.log_error(str(e))            
